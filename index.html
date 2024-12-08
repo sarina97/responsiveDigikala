@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./public/css/styles.css" rel="stylesheet" />
+    <link href="./public/css/swiper-custom.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/public/css/font.css">
+    <link
+    rel="stylesheet"
+    href="node_modules/swiper/swiper-bundle.min.css"
+  />
+    <title>Document</title>
+  </head>
+  <body class="font-myfont">
+    <!-- header start  -->
+    <header
+      class="mainHeader fixed w-[full] bg-white h-auto top-0 left-0 z-[200] border-b-2  "
+    >
+      <!-- hedaer images  -->
+      <img src="./images/header1.gif" alt="" class=" overflow-hidden h-10 object-cover md:w-full md:h-fit" />
+
+      <!-- header contant first  -->
+      <div class="header_content w-[100vw] mx-auto p-2 flex flex-col lg:justify-between gap-1">
+
+       <div class="header_content_first flex mx-auto xl:w-[85%] lg:flex-row  md:justify-between gap-2">
+        <div  iv class="header_content_right flex flex-col lg:items-center lg:flex-row gap-4">
+          <div class="header_icon">
+            <img src="./images/header/لوگوی دیجیکالا.svg" class="w-[195px] hidden lg:block" alt="">
+            <div class="mobile-header-icon flex flex-row items-center gap-2">
+              <img src="./images/header/Logo.jpg" class="w-[32px] lg:hidden rounded-lg overflow-hidden" alt="">
+              <h2 class="text-black block lg:hidden text-[14px] font-bold
+              ">اپلیکیشن دیجی کالا</h2>
+            </div>
+          </div>
+
+          
+          <div class="header_search relative cursor-pointer flex items-center p-1 md:p-2 bg-gray-100 w-[100vw] lg:w-[600px] rounded-2xl md:rounded-md ">
+            <img src="./images/header/search-icon.svg" alt="">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="جستجو"
+              class="bg-transparent pb-1 placeholder:text-gray-900 placeholder:text-[13px] border-none outline-none text-[12px] w-full"
+            />
+            <button id="close-search" class=" absolute left-0 bottom-0 top-2 cursor-pointer w-[20px] text-gray-500 text-lg font-bold hover:text-red-500">×</button>
+              
+            <!-- نتایج -->
+            <div id="search-results" class="absolute top-[100%] left-0 w-full bg-white z-[500] rounded-bl-lg rounded-br-lg shadow-lg p-2 text-[14px] hidden">
+              
+            </div>
+          </div>
+          
+
+          <div class="choose-city lg:hidden w-full flex justify-between" id="choose-city">
+            <a href="#" class="text-[12px] flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+              </svg>
+              <span>انتخاب استان و شهر</span>
+            </a>
+            <img src="./images/header/go-icon.svg" alt="">
+          </div>
+        </div>
+        <div class="header_content_left hidden lg:flex gap-2 items-center ">
+          <a href="login.html" class="hidden header_content_left lg:flex flex-row gap-1 items-center h-[40px] px-6 border-[1px] rounded-md">
+            <img src="./images/header/login-icon.svg" alt="">
+            <span class="text-[10px] xl:text-[12px] font-bold text-gray-700">ورود | ثبت نام</span>
+          </a>
+          <span class="text-gray-200 bg-gray-200 w-[2px] h-6">|</span>
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px; fill: var(--color-icon-high-emphasis);" width="24" height="24"><defs><symbol id="cartOff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M20 4h2V2h-3a1 1 0 00-1 1v1H3a1 1 0 00-.995 1.1l1 10A1 1 0 004 16h15a1 1 0 001-1V4zm-2 17a2 2 0 110-4 2 2 0 010 4zM5 21a2 2 0 110-4 2 2 0 010 4zm13-7V6H4.105l.8 8H18z" clip-rule="evenodd"></path></symbol></defs><g><path fill-rule="evenodd" d="M20 4h2V2h-3a1 1 0 00-1 1v1H3a1 1 0 00-.995 1.1l1 10A1 1 0 004 16h15a1 1 0 001-1V4zm-2 17a2 2 0 110-4 2 2 0 010 4zM5 21a2 2 0 110-4 2 2 0 010 4zm13-7V6H4.105l.8 8H18z" clip-rule="evenodd"></path></g></svg>
+        </div>
+       </div>
+
+       <!-- Navigation Items -->
+       <div class="header_content_second mx-auto xl:w-[85%] justify-between   lg:items-center pt-2 hidden lg:flex transition-all duration-150 gap-2" >
+        <div class="flex space-x-1 gap-2  py-1 items-center">
+          <a href="#" class="nav-item relative flex items-center text-[13px] text-gray-500 ">
+            <img src="./images/header/categorie-icon.svg" alt=""></a>
+
+            <div class="nav-ite relative group header-list-items">
+              <span class="cursor-pointer font-bold text-[13px]">دسته‌بندی کالاها</span>
+            
+              <!-- Dropdown Menu -->
+              <div
+                class="dropdown-menu absolute right-[-35%] top-full mt-[12px] bg-white shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible hover:opacity-100 hover:visible rounded-bl-lg rounded-br-lg transition-all duration-300 h-[70vh] w-[50vw] z-[200] flex"
+              >
+                <div class="sidebar w-1/4 bg-gray-100 overflow-y-auto" id="categories-sidebar">
+                </div>
+                <div class="content gap-2 flex-wrap w-3/4 bg-white overflow-y-scroll px-3" id="category-details">
+                  
+                </div>
+              </div>
+            </div>
+                  
+            
+            
+
+            <span class="text-gray-200">|</span>
+          <a href="#" class="nav-item relative flex items-center text-[13px] text-gray-500 ">
+            <img src="./images/header/anazing-icon.svg" alt="" class="w-[15px]">
+            <span>شگفت‌انگیزها</span>
+          </a>
+          <a href="#" class="nav-item relative text-[12px] text-gray-500 ">سوپرمارکت</a>
+          <a href="#" class="nav-item relative text-[12px] text-gray-500 block">کارت هدیه</a>
+
+          <a href="#" class="nav-item relative text-[12px] text-gray-500 flex items-center">
+            <img src="./images/header/highsell-icon.svg" alt="" class="w-[15px]">
+            <span>پرفروش ترین ها</span>
+          </a>
+          <a href="#" class="nav-item relative flex items-center text-[12px] text-gray-500 ">تخفیف ها پیشنهاد ها</a>
+          <span class="text-gray-200">|</span>
+          <div class="group relative">
+
+          </div>
+          <a href="#" class="nav-item hidden xl:block relative text-[12px] text-gray-600">سوالی دارید؟</a>
+          <a href="#" class="nav-item relative text-[12px] text-gray-600">در دیجیکالا بفروشید</a>
+        </div>
+
+        <!-- choose city start -->
+        <div class="relative ">
+          <div class="cursor-pointer" id="showModalBtn">
+            <a
+              href="#"
+              title="برای مشاهده تخفیف ها و کالاهای قابل ارسال کلیک کنید"
+              class="flex items-center bg-orange-50 px-4 py-1 rounded-2xl gap-1"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#f6932b"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                />
+              </svg>
+              <span class="text-[12px] text-[#f6932b] font-bold">شهر خود را انتخاب کنید</span>
+            </a>
+          </div>
+        
+          <!-- Modal -->
+          <div
+            class="city-modal hidden fixed inset-0 bg-black bg-opacity-50 justify-center items-center w-full"
+          >
+            <div class="bg-white h-[80vh] overflow-hidden mx-auto w-full max-w-md p-4 rounded shadow-md relative">
+              <button
+                class="modal-close absolute top-[4%] left-[10%] text-gray-500 hover:text-black"
+              >
+                &times;
+              </button>
+              <h3 class="text-lg my-1 font-bold mb-4">انتخاب شهر</h3>
+              <hr class="mb-4">
+              <input
+                type="text"
+                id="city-search"
+                class="w-full px-4 py-2 text-[12px] border mb-4 outline-none border-none bg-gray-100 rounded-2xl"
+                placeholder="جستجو در شهرها..."
+              />
+              <p class="text-[14px] text-gray-600 p-1">برای مشاهده تخفیف‌ها و کالا‌های قابل ارسال به شهرتان، آن را انتخاب کنید.</p>
+              <div class="repeted-city mb-6">
+                <h2 class="text-[#434467] my-4">شهر های پرتکرار</h2>
+                <div class="repeated-city-swiper  ">
+                  <div class="swiper-wrapper swiper-wrapper4  ">
+                    <!-- Slides will be dynamically injected -->
+                  </div>
+                  <!-- Swiper Buttons -->
+                  <div class="swiper-button-next-city"></div>
+                  <div class="swiper-button-prev-city"></div>
+                </div>
+              </div>
+              
+              <div class="city-list max-h-[60%] overflow-y-auto mt-2"></div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>  
+      </div>
+      
+      
+    </header>
+    <!-- header end -->
+    <!-- main start  -->
+    <main class="mt-[200px] md:mt-[190px] relative  mx-auto">
+      <!-- stories start  -->
+
+     <div class="story relative">
+      <div class="swiper-container2 relative swiper2 lg:w-[90%] xl:w-[70%] mx-auto overflow-hidden p-2">
+        <div class="swiper-wrapper swiper-wrapper2">
+          <!-- Slides will be dynamically added -->
+        </div>
+        <div class="swiper2-button-next"></div>
+        <div class="swiper2-button-prev"></div>
+      </div>
+     </div>
+      <!-- stories end  -->
+
+      <!-- slider start -->
+     <div class="slider relative">
+      <div class="swiper-container swiper1 overflow-hidden">
+        <div class="swiper-wrapper swiper-wrapper1 relative">
+          
+      </div>
+        <div class="swiper-button-next swiper1-button-next"></div>
+        <div class="swiper-button-prev swiper1-button-prev"></div>
+        <div class="swiper-pagination swiper1-pagination "></div>
+      </div>
+     </div>
+      <!-- slider end -->
+
+      <!-- items start  -->
+        <div class="items_container w-[90%] xl:w-[70%] mx-auto hidden md:flex md:items-center">
+          <div class="items flex overflow-hidden items-center justify-center py-5 w-full "></div>
+        </div>
+      <!-- items end  -->
+
+    
+      
+     <!-- amazing start  -->
+      <div class="amazing relative w-[100%]">
+        <div class="amazing_conetnt relative w-[100%] xl:w-[70%] mx-auto bg-custom-red flex flex-col lg:flex-row lg:rounded-2xl mt-4 lg:mt-0 h-fit items-center">
+          <div class="amzing_header flex lg:flex-col justify-between lg:items-center lg:h-[90%] w-full lg:w-[12%] transition-all duration-300">
+            <div class="images flex lg:flex-col items-center">
+              <img src="./images/amazing/شگفت انگیز.svg" class="bg-transparent object-cover w-[80px] hidden lg:block" alt="incredible-word">
+              <div class="amazing_timer flex items-center justify-center gap-1 p-4 rounded-lg text-white order-3 lg:order-2">
+                <span class="time-box w-6 h-6 flex items-center justify-center bg-white text-black text-[13px] font-bold rounded-md" id="seconds">00</span>
+                <span class="text-white">:</span>
+                <span class="time-box w-6 h-6 flex items-center justify-center bg-white text-black text-[13px] font-bold rounded-md" id="minutes">00</span>
+                <span class="text-white">:</span>
+                <span class=" time-box w-6 h-6 flex items-center justify-center bg-white text-black text-[13px] font-bold rounded-md" id="hours">00</span>
+              </div>
+              <img src="./images/amazing/شگفت انگیز-1.svg" class="w-[30px] lg w-[50px]:lg:w-[60px]" alt="incredible-word">
+            </div>
+            <a href="#" class="flex items-center gap-1 text-[12px] text-white">مشاهده همه</a>
+          </div>
+        
+          <!-- Swiper Container -->
+          <div class="swiper amazing-swiper w-full lg:w-[90%]">
+            <div class="swiper-wrapper swiper-wrapper5 relative">
+              <!-- Slides will be appended dynamically -->
+            </div>
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-prev5"></div>
+            <div class="swiper-button-next5"></div>
+          </div>
+        </div>
+        
+      </div>
+     <!-- amazing end  -->
+
+       <!-- posters start  -->
+       <div class="posters_continer my-3 w-[90%] md:w-[90%] xl:w-[70%] grid grid-cols-2 lg:grid-cols-4 items-center justify-center mx-auto gap-2 ">
+        <img src="./images/midd-poster/poster1.jpg" alt="" class="rounded-2xl w-[280px] h-[120px] md:w-[380px] md:h-[240px] lg:w-[300px] lg:h-[210px] object-cover lg:object-cover object-center">
+        <img src="./images/midd-poster/poster2.jpg" alt="" class="rounded-2xl w-[280px] h-[120px] md:w-[350px] md:h-[240px] lg:w-[300px] lg:h-[210px] object-cover lg:object-cover object-center">
+        <img src="./images/midd-poster/poster3.jpg" alt="" class="rounded-2xl w-[280px] h-[120px] md:w-[350px] md:h-[240px] lg:w-[300px] lg:h-[210px] object-cover lg:object-cover object-center">
+        <img src="./images/midd-poster/poster4.jpg" alt="" class="rounded-2xl w-[280px] h-[120px] md:w-[350px] md:h-[240px] lg:w-[300px] lg:h-[210px] object-cover lg:object-cover object-center">
+       </div>
+      <!-- posters end  -->
+
+      <!-- supermarket amazing start ?\ -->
+       <div class="market_ama_container h-auto w-[90%] md:w-[90%] xl:w-[70%] mx-auto bg-[#ebeded] rounded-xl flex flex-col md:flex-row items-center justify-end md:justify-between p-3  " >
+         <div class="market_ama_right flex items-center gap-3">
+          <img src="./images/supermarket/fresh_prev_ui.png" alt="fresh" class="w-[50px]">
+          <img src="./images/supermarket/title.svg" alt="" class="w-[200px] lg:w-[250px]">
+          <a href="#" class="w-[100px] bg-[#029a49] text-[12px] text-white rounded-xl p-1 text-center">
+            تا 50% تخفیف
+          </a>
+         </div>
+        <div class="market_ama_left flex items-center gap-1">
+          <div class="left_products flex items-center gap-2">
+            <div class="cpntent relative">
+              <img src="./images/supermarket/pro1.jpg" class="rounded-[50%] w-[50px] lg:w-[60px] bg-white p-2" alt="">
+              <span class="bg-[#d32f2f] text-white text-center text-[10px] px-[5px] rounded-lg absolute bottom-[1%]">50%</span>
+            </div>
+            <div class="cpntent relative">
+              <img src="./images/supermarket/pro1.jpg" class="rounded-[50%] w-[50px] lg:w-[60px] bg-white p-2" alt="">
+              <span class="bg-[#d32f2f] text-white text-center text-[10px] px-[5px] rounded-lg absolute bottom-[1%]">50%</span>
+            </div>
+            <div class="cpntent relative">
+              <img src="./images/supermarket/pro1.jpg" class="rounded-[50%] w-[50px] lg:w-[60px] bg-white p-2" alt="">
+              <span class="bg-[#d32f2f] text-white text-center text-[10px] px-[5px] rounded-lg absolute bottom-[1%]">50%</span>
+            </div>
+            <div class="cpntent relative hidden lg:flex">
+              <img src="./images/supermarket/pro1.jpg" class="rounded-[50%] w-[50px] lg:w-[60px] bg-white p-2" alt="">
+              <span class="bg-[#d32f2f] text-white text-center text-[10px] px-[5px] rounded-lg absolute bottom-[1%]">50%</span>
+            </div>
+            <div class="cpntent relative hidden xl:flex">
+              <img src="./images/supermarket/pro1.jpg" class="rounded-[50%] w-[50px] lg:w-[60px] bg-white p-2" alt="">
+              <span class="bg-[#d32f2f] text-white text-center text-[10px] px-[5px] rounded-lg absolute bottom-[1%]">50%</span>
+            </div>
+          </div>
+          <div class="left_button ">
+            <a href="#" class="bg-white p-2 flex items-center gap-1 rounded-2xl">
+              <span class="text-[10px] text-[#029a49] hidden lg:block">بیش از 200 کالا</span>
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" style="width: 20px; height: 20px; fill:#029a49;" width="24" height="24"><defs><symbol id="arrowLeft" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M11.293 19.707l1.414-1.414L7.414 13H20v-2H7.414l5.293-5.293-1.414-1.414-7 7a1 1 0 000 1.414l7 7z" clip-rule="evenodd"></path></symbol></defs><g><path fill-rule="evenodd" d="M11.293 19.707l1.414-1.414L7.414 13H20v-2H7.414l5.293-5.293-1.414-1.414-7 7a1 1 0 000 1.414l7 7z" clip-rule="evenodd"></path></g></svg>
+            </a>
+          </div>
+        </div>
+       </div>
+      <!-- supermarket amazing end -->
+       <!-- posters start  -->
+       <div class="posters_continer my-3 w-[90%] md:w-[90%] xl:w-[70%] grid grid-cols-2 lg:grid-cols-4 items-center justify-center mx-auto gap-2 ">
+        <img src="./images/midd-poster/poster5.jpg" alt="" class="rounded-2xl w-[300px] h-[120px] md:w-[380px] md:h-[240px] lg:w-[300px] lg:h-[210px] object-cover lg:object-cover object-center">
+        <img src="./images/midd-poster/poster6.jpg" alt="" class="rounded-2xl w-[300px] h-[120px] md:w-[380px] md:h-[240px] lg:w-[300px] lg:h-[210px]  object-cover lg:object-cover object-center">
+        <img src="./images/midd-poster/poster7.jpg" alt="" class="rounded-2xl w-[300px] h-[120px] md:w-[380px] md:h-[240px] lg:w-[300px] lg:h-[210px]  object-cover lg:object-cover object-center">
+        <img src="./images/midd-poster/poster8.jpg" alt="" class="rounded-2xl w-[300px] h-[120px] md:w-[380px] md:h-[240px] lg:w-[300px] lg:h-[210px]  object-cover lg:object-cover object-center">
+       </div>
+      <!-- posters end  -->
+
+      <!-- buy by category start  -->
+       <div class="buy_category w-[90%] xl:w-[70%] mx-auto my-8">
+       </div>
+      <!-- buy by category end  -->
+
+      <!-- long poster start  -->
+       <div class="long_poster my-4 w-[90%] md:w-[90%] xl:w-[70%] grid grid-cols-1 md:grid-cols-2 items-center justify-center mx-auto gap-2 ">
+        <img src="./images/midd-poster/long1.jpg" alt="tasty" class="rounded-2xl h-[200px] md:h-auto object-cover ">
+        <img src="./images/midd-poster/long2.jpg" alt="sofia-tea" class="rounded-2xl h-[200px] md:h-auto object-cover ">
+       </div>
+      <!-- long poster end  -->
+
+
+    </main>
+    <!-- main end  -->
+
+
+<script src="node_modules/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/js/main.js" type="module"></script>
+   
+    </script>
+  </body>
+</html>

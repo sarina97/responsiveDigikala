@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/iranyekanwebbold.cfb6e26c (2).woff2') format('woff2'),
+         url('../fonts/iranyekanwebextrabold.9346e9a2.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/iranyekanwebmedium.2d4f96e5.woff') format('woff'),
+         url('../fonts/iranyekanwebregular.e31c09af.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
