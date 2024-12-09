@@ -1,11 +1,12 @@
 {
   "data": {
     "slider": [
-      { "id": 1, "name": "slide1", "url": "./images/slider/slide1.jpg" },
+      { "id": 1, "name": "slide1", "url": "./images/slider/slide6.jpg" },
       { "id": 2, "name": "slide2", "url": "./images/slider/slide2.jpg" },
       { "id": 3, "name": "slide3", "url": "./images/slider/slide3.jpg" },
       { "id": 4, "name": "slide4", "url": "./images/slider/slide4.jpg" },
-      { "id": 5, "name": "slide5", "url": "./images/slider/slide5.jpg" }
+      { "id": 5, "name": "slide5", "url": "./images/slider/slide5.jpg" },
+      { "id": 6, "name": "slide6", "url": "./images/slider/slide1.jpg" }
     ],
     "categories": [
       {
@@ -918,6 +919,19 @@
         "title": "محصولات بومی و محلی",
         "image": "./images/category-buy/mobile.jpg"
       }
+    ],
+    "favBrands":[
+      { "id": 1, "url": "./images/brands/pril.jpg" },
+      { "id": 2, "url": "./images/brands/samsung.jpg" },
+      { "id": 3, "url": "./images/brands/persil.jpg" },
+      { "id": 4, "url": "./images/brands/kingstart.jpg" },
+      { "id": 5, "url": "./images/brands/huawei.jpg" },
+      { "id": 6, "url": "./images/brands/adata.jpg" },
+      { "id": 7, "url": "./images/brands/xvision.jpg" },
+      { "id": 8, "url": "./images/brands/lafarrerr.jpg" },
+      { "id": 9, "url": "./images/brands/zarin.jpg" },
+      { "id": 9, "url": "./images/brands/pegah.jpg" },
+      { "id": 9, "url": "./images/brands/panter.jpg" }
     ]
   }
 }

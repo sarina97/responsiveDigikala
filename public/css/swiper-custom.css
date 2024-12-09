@@ -1,8 +1,12 @@
 /* Custom Swiper styles */
-.swiper .swiper-container .swiper-container2 , .swiper-container3 {
+.swiper .swiper-container .swiper-container2,
+.swiper-container3 {
   position: relative !important;
 }
-.swiper2-button-next , .swiper2-button-prev , .swiper-button-next3 , .swiper-button-prev3{
+.swiper2-button-next,
+.swiper2-button-prev,
+.swiper-button-next3,
+.swiper-button-prev3 {
   position: absolute !important;
   background-color: black !important;
   z-index: 20;
@@ -15,10 +19,8 @@
   justify-content: center !important;
   top: auto !important;
   bottom: 35px !important;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
-
-
 
 .swiper-button-next,
 .swiper-button-prev {
@@ -34,9 +36,10 @@
   justify-content: center !important;
   top: auto !important;
   bottom: 35px !important;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
-.swiper-container:hover .swiper-button-next , .swiper-container:hover .swiper-button-prev{
+.swiper-container:hover .swiper-button-next,
+.swiper-container:hover .swiper-button-prev {
   visibility: visible !important ;
   opacity: 1;
 }
@@ -59,43 +62,52 @@
 /* Desktop styles */
 @media screen and (min-width: 768px) {
   .swiper-button-next,
-  .swiper-button-prev{
-    width: 10px !important;
-    height: 10px !important;
+  .swiper-button-prev {
+    width: 40px !important;
+    height: 40px !important;
   }
 
   .swiper-button-next::after,
-  .swiper-button-prev::after ,
+  .swiper-button-prev::after,
   .swiper2-button-next::after,
-  .swiper2-button-prev::after ,
+  .swiper2-button-prev::after,
   .swiper-button-next-city::after,
-  .swiper-button-prev-city::after  {
+  .swiper-button-prev-city::after {
     font-size: 18px !important;
+  }
+  .swiper2-button-next::after,
+  .swiper2-button-prev::after,
+  .swiper-button-next-city::after,
+  .swiper-button-prev-city::after,
+  .swiper-button-next5::after,
+  .swiper-button-prev5::after {
+    color: #ffffff !important;
   }
   .swiper-button-prev {
     right: 20px !important;
     left: auto !important;
   }
-   
 }
 
-.swiper-button-prev{
+.swiper-button-prev {
   right: 30px !important;
   /* left: auto !important; */
 }
 
-.swiper-button-next{
+.swiper-button-next {
   right: 75px !important;
   /* right: auto !important; */
 }
 
-.swiper2-button-prev , .swiper-button-prev3 {
+.swiper2-button-prev,
+.swiper-button-prev3 {
   right: 10px !important;
   bottom: 80px !important;
   left: auto !important;
 }
 
-.swiper2-button-next , .swiper-button-next3 {
+.swiper2-button-next,
+.swiper-button-next3 {
   left: 10px !important;
   bottom: 80px !important;
   right: auto !important;
@@ -104,16 +116,6 @@
 .swiper-button-next::after,
 .swiper-button-prev::after {
   color: #ffffff !important;
-}
-.swiper2-button-next::after,
-.swiper2-button-prev::after,
-.swiper-button-next-city::after,
-.swiper-button-prev-city::after,
-.swiper-button-next5::afterc,
-.swiper-button-prev5::after {
-  color: #ffffff !important;
-  
-  
 }
 
 .swiper-pagination {
@@ -145,7 +147,6 @@
   }
 }
 
-
 .header_content_second .nav-item {
   position: relative;
 }
@@ -165,7 +166,6 @@
   width: 100%; /* Expand underline on hover */
 }
 
-
 .repeated-city-swiper {
   position: relative !important;
   width: 100% !important; /* Ensure it takes full width */
@@ -174,9 +174,11 @@
 }
 
 .swiper-button-next-city,
-.swiper-button-prev-city ,
+.swiper-button-prev-city,
 .swiper-button-next5,
-.swiper-button-prev5{
+.swiper-button-prev5,
+.swiper-button-next6,
+.swiper-button-prev6 {
   position: absolute !important;
   color: black !important;
   top: 50% !important;
@@ -194,6 +196,7 @@
   left: 10px !important;
 }
 
-.swiper-button-prev-city , .swiper-button-prev5{
+.swiper-button-prev-city,
+.swiper-button-prev5 {
   right: 10px !important;
 }
