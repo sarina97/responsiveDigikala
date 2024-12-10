@@ -920,7 +920,7 @@
         "image": "./images/category-buy/mobile.jpg"
       }
     ],
-    "favBrands":[
+    "favBrands": [
       { "id": 1, "url": "./images/brands/pril.jpg" },
       { "id": 2, "url": "./images/brands/samsung.jpg" },
       { "id": 3, "url": "./images/brands/persil.jpg" },
@@ -932,6 +932,90 @@
       { "id": 9, "url": "./images/brands/zarin.jpg" },
       { "id": 9, "url": "./images/brands/pegah.jpg" },
       { "id": 9, "url": "./images/brands/panter.jpg" }
+    ],
+    "yourTaste": [
+      {
+        "type": "taste1",
+        "items": [
+          {
+            "category": "گوشی موبایل",
+            "items": [
+              { "id": 1, "url": "./images/yourTaste/mob1.jpg" },
+              { "id": 2, "url": "./images/yourTaste/mob2.jpg" },
+              { "id": 3, "url": "./images/yourTaste/mob3.jpg" },
+              { "id": 4, "url": "./images/yourTaste/mob4.jpg" }
+            ]
+          },
+          {
+            "category": "کیف و کاور گوشی",
+            "items": [
+              { "id": 1, "url": "./images/yourTaste/case1.jpg" },
+              { "id": 2, "url": "./images/yourTaste/case2.jpg" },
+              { "id": 3, "url": "./images/yourTaste/case3.jpg" },
+              { "id": 4, "url": "./images/yourTaste/case4.jpg" }
+            ]
+          },
+          {
+            "category": "هدفون,هدست و هندزفری",
+            "items": [
+              { "id": 1, "url": "./images/yourTaste/pod1.jpg" },
+              { "id": 2, "url": "./images/yourTaste/pod2.jpg" },
+              { "id": 3, "url": "./images/yourTaste/pod3.jpg" },
+              { "id": 4, "url": "./images/yourTaste/pod4.jpg" }
+            ]
+          },
+          {
+            "category": "لپ تاپ و الترابوک",
+            "items": [
+              { "id": 1, "url": "./images/yourTaste/top1.jpg" },
+              { "id": 2, "url": "./images/yourTaste/top2.jpg" },
+              { "id": 3, "url": "./images/yourTaste/top3.jpg" },
+              { "id": 4, "url": "./images/yourTaste/top4.jpg" }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "taste2",
+        "items": [
+          {
+            "category": "جوراب زنانه",
+            "items": [
+              { "id": 1, "url": "./images/yourTaste/sock1.jpg" },
+              { "id": 2, "url": "./images/yourTaste/sock2.jpg" },
+              { "id": 3, "url": "./images/yourTaste/sock3.jpg" },
+              { "id": 4, "url": "./images/yourTaste/sock4.jpg" }
+            ]
+          },
+          {
+            "category": "ساعت هوشمند",
+            "items": [
+              { "id": 1, "url": "./images/yourTaste/watch1.jpg" },
+              { "id": 2, "url": "./images/yourTaste/watch2.jpg" },
+              { "id": 3, "url": "./images/yourTaste/watch3.jpg" },
+              { "id": 4, "url": "./images/yourTaste/watch4.jpg" }
+            ]
+          },
+          {
+            "category": "ساعت عقربه ای مردانه",
+            "items": [
+              { "id": 1, "url": "./images/yourTaste/watch5.jpg" },
+              { "id": 2, "url": "./images/yourTaste/watch6.jpg" },
+              { "id": 3, "url": "./images/yourTaste/watch7.jpg" },
+              { "id": 4, "url": "./images/yourTaste/watch8.jpg" }
+            ]
+          },
+          {
+            "category": "سایر لوازم خودرو",
+            "items": [
+              { "id": 1, "url": "./images/yourTaste/car1.jpg" },
+              { "id": 2, "url": "./images/yourTaste/car2.jpg" },
+              { "id": 3, "url": "./images/yourTaste/car3.jpg" },
+              { "id": 4, "url": "./images/yourTaste/car5.jpg" }
+            ]
+          }
+        ]
+      }
     ]
   }
 }

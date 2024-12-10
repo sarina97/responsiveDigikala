@@ -9,6 +9,7 @@ import items from "./menu/middle/items.js";
 import amazing from "./menu/middle/amazing.js";
 import buyCategory from "./menu/middle/buyCategory.js";
 import favBreands from "./menu/middle/favBreands.js";
+import yourTaste from "./menu/middle/yourTaste.js";
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -21,5 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
   amazing();
   buyCategory();
   favBreands();
+  yourTaste();
 });
 loadCities();

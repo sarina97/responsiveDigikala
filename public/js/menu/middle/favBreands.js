@@ -24,7 +24,7 @@ const favBreands = async () => {
             <img 
               src="${item.url}" 
               alt="Brand Image" 
-              class="w-[100%] h-[100%] object-cover"
+              class="w-[100%] h-[100%] object-contain"
             />
           </div>
         `;
@@ -38,7 +38,7 @@ const favBreands = async () => {
           nextEl: ".swiper-button-next6",
           prevEl: ".swiper-button-prev6",
         },
-        slidesPerView: 4.3,
+        slidesPerView: 4,
         spaceBetween: -50,
         breakpoints: {
           640: { slidesPerView: 7 },

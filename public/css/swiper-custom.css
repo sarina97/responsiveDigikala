@@ -192,11 +192,13 @@
 }
 
 .swiper-button-next-city,
-.swiper-button-next5 {
+.swiper-button-next5 , 
+.swiper-button-next6 {
   left: 10px !important;
 }
 
 .swiper-button-prev-city,
-.swiper-button-prev5 {
+.swiper-button-prev5,
+.swiper-button-prev6 {
   right: 10px !important;
 }
