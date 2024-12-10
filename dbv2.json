@@ -1016,6 +1016,208 @@
           }
         ]
       }
+    ],
+    "highSell": [
+      {
+        "type": "highsell",
+        "items": [
+          {
+            "items": [
+              {
+                "id": 1,
+                "url": "./images/high-sell/egg.jpg",
+                "title": "تخم مرغ - 400 گرم"
+              },
+              {
+                "id": 2,
+                "url": "./images/high-sell/cheese.jpg",
+                "title": "پنیر سفید ایرانی پگاه - 400 گرم"
+              },
+              {
+                "id": 3,
+                "url": "./images/high-sell/cream.jpg",
+                "title": "خامه صبحانه کاله -200 میلی لیتر"
+              }
+            ]
+          },
+          {
+            "items": [
+              {
+                "id": 4,
+                "url": "./images/high-sell/headphone.jpg",
+                "title": "هدفون بلوتوثی انکر مدل SoundCore R50i A3949"
+              },
+              {
+                "id": 5,
+                "url": "./images/high-sell/heater.jpg",
+                "title": "فن هیتر پارس خزر مدل FH2000P"
+              },
+              {
+                "id": 6,
+                "url": "./images/high-sell/lamp.jpg",
+                "title": "پنیر سفید ایرانی پگاه - 400 گرم"
+              }
+            ]
+          },
+          {
+            "items": [
+              {
+                "id": 7,
+                "url": "./images/high-sell/oil.jpg",
+                "title": "روغن مایع ویتامینه آفتاب گردان لادن - 1.5 لیتر"
+              },
+              {
+                "id": 8,
+                "url": "./images/high-sell/phone.jpg",
+                "title": "گوشی موبایل نوکیا مدل 106 2023 دو سیم کارت - مونتاژ ایران تحت لیسانس نوکیا "
+              },
+              {
+                "id": 9,
+                "url": "./images/high-sell/phone2.jpg",
+                "title": "گوشی موبایل شیائومی مدل Redmi Note 13 4G دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت"
+              }
+            ]
+          },
+          {
+            "items": [
+              {
+                "id": 10,
+                "url": "./images/high-sell/phone3.jpg",
+                "title": "پنیر سفید ایرانی پگاه - 400 گرم"
+              },
+              {
+                "id": 11,
+                "url": "./images/high-sell/pod.jpg",
+                "title": "پنیر سفید ایرانی پگاه - 400 گرم"
+              },
+              {
+                "id": 12,
+                "url": "./images/high-sell/pod2.jpg",
+                "title": "پنیر سفید ایرانی پگاه - 400 گرم"
+              }
+            ]
+          },
+          {
+            "items": [
+              {
+                "id": 13,
+                "url": "./images/high-sell/powder.jpg",
+                "title": "پودر لباسشویی دستی برف مدل Super وزن 500 گرم"
+              },
+              {
+                "id": 14,
+                "url": "./images/high-sell/sugar.jpg",
+                "title": "شکر سفید الماس دانه - 1 کیلوگرم"
+              },
+              {
+                "id": 15,
+                "url": "./images/high-sell/tuna.jpg",
+                "title": "پنیر سفید ایرانی پگاه - 400 گرم"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "hotsell",
+        "items": [
+          {
+            "items": [
+              {
+                "id": 1,
+                "url": "./images/high-sell/hot_bike.jpg",
+                "title": "دوچرخه کوهستان مدل AZT-W سایز طوقه 26"
+              },
+              {
+                "id": 2,
+                "url": "./images/high-sell/hot_gadget.jpg",
+                "title": "مجموعه ابزار 100 عددی صنعتی اینتیمکث کد 100208"
+              },
+              {
+                "id": 3,
+                "url": "./images/high-sell/hot_headphone.jpg",
+                "title": "هدفون بلوتوثی اکسیژن مدل E10"
+              }
+            ]
+          },
+          {
+            "items": [
+              {
+                "id": 4,
+                "url": "./images/high-sell/hot_heater.jpg",
+                "title": "فن هیتر هاردستون مدل HEP2023"
+              },
+              {
+                "id": 5,
+                "url": "./images/high-sell/hot_lamp.jpg",
+                "title": "لچراغ دیواری 6 وات اکو ماورا مدل قطاری طرح دکوراتیو دوطرفه"
+              },
+              {
+                "id": 6,
+                "url": "./images/high-sell/hot_phone.jpg",
+                "title": "گوشی موبایل ریلمی مدل C67 4G دو سیم کارت ظرفیت 256 گیگابایت رم 8 گیگابایت"
+              }
+            ]
+          },
+          {
+            "items": [
+              {
+                "id": 7,
+                "url": "./images/high-sell/hot_tv.jpg",
+                "title": "تلویزیون ال ای دی هوشمند ایکس ویژن مدل 55XYU785 سایز 55 اینچ"
+              },
+              {
+                "id": 8,
+                "url": "./images/high-sell/hot_watch.jpg",
+                "title": "ساعت هوشمند ورنا مدل T45 Pro max With 7 Bands"
+              },
+              {
+                "id": 9,
+                "url": "./images/high-sell/hot_lamp2.jpg",
+                "title": "لامپ ال ای دی 9 وات سایروکس مدل A60 پایه E27 بسته 2 عددی"
+              }
+            ]
+          },
+          {
+            "items": [
+              {
+                "id": 10,
+                "url": "./images/high-sell/phone3.jpg",
+                "title": "پنیر سفید ایرانی پگاه - 400 گرم"
+              },
+              {
+                "id": 11,
+                "url": "./images/high-sell/pod.jpg",
+                "title": "پنیر سفید ایرانی پگاه - 400 گرم"
+              },
+              {
+                "id": 12,
+                "url": "./images/high-sell/pod2.jpg",
+                "title": "پنیر سفید ایرانی پگاه - 400 گرم"
+              }
+            ]
+          },
+          {
+            "items": [
+              {
+                "id": 13,
+                "url": "./images/high-sell/powder.jpg",
+                "title": "پنیر سفید ایرانی پگاه - 400 گرم"
+              },
+              {
+                "id": 14,
+                "url": "./images/high-sell/sugar.jpg",
+                "title": "پنیر سفید ایرانی پگاه - 400 گرم"
+              },
+              {
+                "id": 15,
+                "url": "./images/high-sell/tuna.jpg",
+                "title": "پنیر سفید ایرانی پگاه - 400 گرم"
+              }
+            ]
+          }
+        ]
+      }
     ]
   }
 }

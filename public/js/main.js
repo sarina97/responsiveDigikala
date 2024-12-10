@@ -10,6 +10,7 @@ import amazing from "./menu/middle/amazing.js";
 import buyCategory from "./menu/middle/buyCategory.js";
 import favBreands from "./menu/middle/favBreands.js";
 import yourTaste from "./menu/middle/yourTaste.js";
+import highSell from "./menu/middle/highSell.js";
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -17,11 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
   Slider();
   handleHeaderScroll();
   createDropdownMenu();
+  loadCities();
   Stories();
   items();
   amazing();
   buyCategory();
   favBreands();
   yourTaste();
+  highSell();
 });
-loadCities();
