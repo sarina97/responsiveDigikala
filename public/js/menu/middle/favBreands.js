@@ -20,7 +20,7 @@ const favBreands = async () => {
         );
         slide.innerHTML = `
           <div 
-            class="flex items-center justify-center p-2 w-[80px] h-[80px] md:w-[110px] md:h-[110px] 2xl:w-[140px] 2xl:h-[140px] border-x-[1px] border-gray-200 overflow-hidden">
+            class="flex items-center justify-center p-2 w-[80px] h-[80px] md:w-[110px] md:h-[110px] 2xl:w-[140px] 2xl:h-[140px] border-l-[1px] border-gray-200 overflow-hidden">
             <img 
               src="${item.url}" 
               alt="Brand Image" 
