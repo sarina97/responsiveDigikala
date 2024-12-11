@@ -1218,6 +1218,117 @@
           }
         ]
       }
+    ],
+    "offer":[
+      {
+        "image": "./images/offer/mobile1.jpg",
+        "price": "807,000",
+        "originalPrice": "1,000,000",
+        "offer": "20%"
+      },
+      {
+        "image": "./images/offer/mobile2.jpg",
+        "price": "94,000",
+        "originalPrice": "120,000",
+        "offer": "22%"
+      },
+
+      {
+        "image": "./images/offer/case1.jpg",
+        "price": "94,000",
+        "originalPrice": "120,000",
+        "offer": "22%"
+      },
+      {
+        "image": "./images/offer/case2.jpg",
+        "price": "94,000",
+        "originalPrice": "120,000",
+        "offer": "22%"
+      },
+      {
+        "image": "./images/offer/case4.jpg",
+        "price": "94,000",
+        "originalPrice": "120,000",
+        "offer": "22%"
+      },
+      {
+        "image": "./images/offer/mobile3.jpg",
+        "price": "94,000",
+        "originalPrice": "120,000",
+        "offer": "22%"
+      },
+      {
+        "image": "./images/offer/pod1.jpg",
+        "price": "94,000",
+        "originalPrice": "120,000",
+        "offer": "22%"
+      },
+      {
+        "image": "./images/offer/pod4.jpg",
+        "price": "94,000",
+        "originalPrice": "120,000",
+        "offer": "22%"
+      },
+      {
+        "image": "./images/offer/pod3.jpg",
+        "price": "94,000",
+        "originalPrice": "120,000",
+        "offer": "22%"
+      },
+      {
+        "image": "./images/offer/osck2.jpg",
+        "price": "310,000",
+        "originalPrice": "390,000",
+        "offer": "20%"
+      },
+      {
+        "image": "./images/offer/sock1.jpg",
+        "price": "310,000",
+        "originalPrice": "390,000",
+        "offer": "20%"
+      },
+      {
+        "image": "./images/offer/sock1.jpg",
+        "price": "310,000",
+        "originalPrice": "390,000",
+        "offer": "20%"
+      },
+      {
+        "image": "./images/offer/sock1.jpg",
+        "price": "310,000",
+        "originalPrice": "390,000",
+        "offer": "20%"
+      },
+      {
+        "image": "./images/offer/sock1.jpg",
+        "price": "310,000",
+        "originalPrice": "390,000",
+        "offer": "20%"
+      },
+      {
+        "image": "./images/offer/sock1.jpg",
+        "price": "310,000",
+        "originalPrice": "390,000",
+        "offer": "20%"
+      },
+      {
+        "image": "./images/offer/sock1.jpg",
+        "price": "310,000",
+        "originalPrice": "390,000",
+        "offer": "20%"
+      },
+      {
+        "image": "./images/offer/sock1.jpg",
+        "price": "310,000",
+        "originalPrice": "390,000",
+        "offer": "20%"
+      },
+      {
+        "image": "./images/offer/sock3.jpg",
+        "price": "310,000",
+        "originalPrice": "390,000",
+        "offer": "20%"
+      }
     ]
   }
 }

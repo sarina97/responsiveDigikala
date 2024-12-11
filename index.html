@@ -190,7 +190,9 @@
 
               <!-- Dropdown Menu -->
               <div
-                class="dropdown-menu absolute right-[-35%] top-full mt-[12px] bg-white shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible hover:opacity-100 hover:visible rounded-bl-lg rounded-br-lg transition-all duration-300 h-[70vh] w-[50vw] z-[200] flex"
+                class="dropdown-menu absolute right-[-35%] top-full mt-[12px] bg-white shadow-lg border border-gray-200 
+                opacity-0 invisible group-hover:opacity-100 group-hover:visible hover:opacity-100 hover:visible rounded-bl-lg rounded-br-lg 
+                transition-all duration-300 h-[70vh] w-[50vw] z-[200] flex"
               >
                 <div
                   class="sidebar w-1/4 bg-gray-100 overflow-y-auto"
@@ -666,9 +668,10 @@
         class="high_sell my-4 w-[100%] md:w-[90%] xl:w-[70%] mx-auto overflow-hidden"
       >
         <div
-          class="high_sell_container p-2 md:border-[.5px] md:border-gray-300 md:rounded-2xl" id="high_sell_container"
+          class="high_sell_container p-2 md:border-[.5px] md:border-gray-300 md:rounded-2xl"
+          id="high_sell_container"
         >
-          <div class="high_sell_header flex justify-between my-4">
+          <div class="high_sell_header flex justify-between my-4 px-2">
             <span class="hidden md:block"></span>
             <h2 class="flex items-center gap-1 text-center">
               <svg
@@ -718,10 +721,61 @@
       </div>
       <!-- choose by taste 2 end -->
 
+      <!-- offer and recommendation start  -->
+      <div class="offer_recom my-4 w-[90%] md:w-[90%] xl:w-[70%] mx-auto">
+        <div
+          class="offer_recom_container md:border-[.5px] md:border-gray-300 md:rounded-2xl flex flex-col items-center justify-center"
+        >
+          <h2 class="flex items-center gap-1 text-center py-4">
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 25px; height: 20px; fill: #ef4056"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="discount"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M22 4a1 1 0 011 1v14a1 1 0 01-1 1H6a1 1 0 01-.707-.293l-4-4A1 1 0 011 15V9a1 1 0 01.293-.707l4-4A1 1 0 016 4h16zm-1 2H6.414L3 9.414v5.172L6.414 18H21V6zm-6 3.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm2.5 6.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM10 12a3 3 0 11-6 0 3 3 0 016 0zm-4 0a1 1 0 102 0 1 1 0 00-2 0zm12.848-3.47l-5 8-1.696-1.06 5-8 1.696 1.06z"
+                    clip-rule="evenodd"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  fill-rule="evenodd"
+                  d="M22 4a1 1 0 011 1v14a1 1 0 01-1 1H6a1 1 0 01-.707-.293l-4-4A1 1 0 011 15V9a1 1 0 01.293-.707l4-4A1 1 0 016 4h16zm-1 2H6.414L3 9.414v5.172L6.414 18H21V6zm-6 3.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm2.5 6.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM10 12a3 3 0 11-6 0 3 3 0 016 0zm-4 0a1 1 0 102 0 1 1 0 00-2 0zm12.848-3.47l-5 8-1.696-1.06 5-8 1.696 1.06z"
+                  clip-rule="evenodd"
+                ></path>
+              </g>
+            </svg>
+            منتخب محصولات تخفیف و حــــراج
+          </h2>
+          <div
+            id="offerGrid"
+            class="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-6 gap-6 w-full"
+          >
+            <!-- Grid items will be dynamically added here -->
+          </div>
+        </div>
+      </div>
+      <!-- offer and recommendation end  -->
+
       <!-- hot sell start  -->
-      <div class="hot_sell my-4 w-[100%] md:w-[90%] xl:w-[70%] mx-auto overflow-hidden">
-        <div class="hot_sell_container p-2 md:border-[.5px] md:border-gray-300 md:rounded-2xl" id="hot_sell_container ">
-          <div class="hot_sell_header flex justify-between my-4">
+      <div
+        class="hot_sell my-4 w-[100%] md:w-[90%] xl:w-[70%] mx-auto overflow-hidden"
+      >
+        <div
+          class="hot_sell_container p-2 md:border-[.5px] md:border-gray-300 md:rounded-2xl"
+          id="hot_sell_container "
+        >
+          <div class="hot_sell_header flex justify-between my-4 px-2">
             <span class="hidden md:block"></span>
             <h2 class="flex items-center gap-1 text-center">
               <svg
@@ -761,7 +815,6 @@
         </div>
       </div>
       <!-- hot sell end  -->
-
     </main>
     <!-- main end  -->
 

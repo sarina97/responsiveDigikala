@@ -11,6 +11,7 @@ import buyCategory from "./menu/middle/buyCategory.js";
 import favBreands from "./menu/middle/favBreands.js";
 import yourTaste from "./menu/middle/yourTaste.js";
 import highSell from "./menu/middle/highSell.js";
+import offer from "./menu/middle/offer.js";
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -26,4 +27,5 @@ document.addEventListener("DOMContentLoaded", () => {
   favBreands();
   yourTaste();
   highSell();
+  offer();
 });
