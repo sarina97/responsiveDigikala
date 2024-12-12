@@ -1,6 +1,6 @@
 const amazing = async () => {
   try {
-    const response = await fetch("http://localhost:3004/data");
+    const response = await fetch("/public/dbv2.json");
     const data = await response.json(); // Await here to ensure the data is resolved parse data to usable json object 
 
     // Timer logic
@@ -37,13 +37,12 @@ const amazing = async () => {
     const amazingHeader = document.querySelector(".amzing_header");
 
     // Check if products exist in the data
-    if (!data.products || !data.products.length) {
+    if (!data.data.products || !data.data.products.length) {
       console.error("No products found in the data");
       return;
     }
-console.log( data.products);
 
-    data.products.forEach((product) => {
+    data.data.products.forEach((product) => {
       const slide = document.createElement("div");
       slide.classList.add("swiper-slide", "flex", "flex-col", "items-center", "justify-center", "p-4");
 

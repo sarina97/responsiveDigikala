@@ -1,6 +1,6 @@
 const yourTaste = async () => {
   try {
-    const response = await fetch("http://localhost:3004/data");
+    const response = await fetch("/public/dbv2.json");
     if (!response.ok) throw new Error("Failed to fetch data");
 
     const responseData = await response.json();
@@ -8,7 +8,7 @@ const yourTaste = async () => {
     console.log("Response Data:", responseData);
 
     // Check if 'yourTaste' data exists
-    const yourTasteData = responseData?.yourTaste;
+    const yourTasteData = responseData?.data.yourTaste;
     if (!yourTasteData) {
       console.error("No 'yourTaste' data found in the response.");
       return;

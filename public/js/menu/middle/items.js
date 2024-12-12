@@ -1,18 +1,17 @@
 const items = async () => {
   try {
-    const response = await fetch("http://localhost:3004/data");
+    const response = await fetch("/public/dbv2.json");
     if (!response.ok) throw new Error("Failed to fetch data");
     const data = await response.json();
 
-    const mainItems = data.items.find((group) => group.type === "main").items;
-    const serviceItems = data.items.find(
+    const mainItems = data.data.items.find((group) => group.type === "main").items;
+    const serviceItems = data.data.items.find(
       (group) => group.type === "services"
     ).items;
     const container = document.querySelector(".items");
 
     container.innerHTML = "";
 
-    // Visible container for main items (first 9)
     const visibleContainer = document.createElement("div");
     visibleContainer.classList.add(
       "visible-items",

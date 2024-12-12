@@ -1,15 +1,16 @@
 const Slider = async () => {
   try {
-    // Fetch data from API
-    const response = await fetch("http://localhost:3004/data");
-    const data = await response.json();
 
-    if (!data.slider) {
+    const response = await fetch("./dbv2.json");
+    const data = await response.json();
+    
+
+    if (!data.data.slider) {
       console.error("No slider data found in the API response");
       return;
     }
 
-    renderSlider(data.slider); // Pass the slider data to the render function
+    renderSlider(data.data.slider);
   } catch (error) {
     console.error("Error fetching API data:", error);
   }
@@ -23,11 +24,9 @@ const renderSlider = (sliderData) => {
     return;
   }
 
-  // Clear any existing slides in the swiper-wrapper
   swiperWrapper.innerHTML = "";
 
-  // Add slides dynamically
-  sliderData.forEach((item) => {
+  sliderData.forEach((item) => {    
     const slide = document.createElement("div");
     slide.classList.add("swiper-slide");
     slide.innerHTML = `

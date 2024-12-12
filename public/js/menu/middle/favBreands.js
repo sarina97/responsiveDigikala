@@ -1,6 +1,6 @@
 const favBreands = async () => {
     try {
-      const response = await fetch("http://localhost:3004/data");
+      const response = await fetch("/public/dbv2.json");
       if (!response.ok) throw new Error("Failed to fetch data");
   
       const data = await response.json();
@@ -8,7 +8,7 @@ const favBreands = async () => {
       const swip_container = document.querySelector(".swiper-wrapper6");
   
       // Create and append slides
-      data.favBrands.forEach((item) => {
+      data.data.favBrands.forEach((item) => {
         const slide = document.createElement("div");
         slide.classList.add(
           "swiper-slide",

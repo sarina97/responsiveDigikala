@@ -1,14 +1,14 @@
 const Stories = async () => {
   try {
-    const response = await fetch("http://localhost:3004/data");
+    const response = await fetch("/public/dbv2.json");
     const data = await response.json();
 
-    if (!data.stories || !data.stories[0] || !data.stories[0].items) {
+    if (!data.data.stories || !data.data.stories[0] || !data.data.stories[0].items) {
       console.error("Invalid data structure for stories");
       return;
     }
 
-    const stories = data.stories[0].items;
+    const stories = data.data.stories[0].items;
     console.log("story : ", stories);
 
     const swiperWrapper = document.querySelector(".swiper-wrapper2");

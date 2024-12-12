@@ -1,9 +1,9 @@
 export default async function createDropdownMenu() {
   try {
-    const response = await fetch("http://localhost:3004/data");
+    const response = await fetch("/public/dbv2.json");
     const data = await response.json();
 
-    const categories = data.categories;
+    const categories = data.data.categories;
 
     if (!categories || categories.length === 0) {
       console.error("No categories found in the API response");

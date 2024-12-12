@@ -78,15 +78,15 @@ export default async function initializeSearch() {
     }
 
     try {
-      const response = await fetch("http://localhost:3004/data");
+      const response = await fetch("/public/dbv2.json");
       const data = await response.json();
 
-      if (!data.searchItems || !Array.isArray(data.searchItems)) {
+      if (!data.data.searchItems || !Array.isArray(data.searchItems)) {
         throw new Error("Invalid data format");
       }
 
       const filteredResults = [];
-      data.searchItems.forEach((category) => {
+      data.data.searchItems.forEach((category) => {
         const matchingItems = category.items.filter((item) =>
           item.title.includes(query)
         );

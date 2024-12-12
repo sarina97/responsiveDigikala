@@ -1,6 +1,6 @@
 const buyCategory = async () => {
   try {
-    const response = await fetch("http://localhost:3004/data");
+    const response = await fetch("/public/dbv2.json");
     const data = await response.json();
 
     const container = document.querySelector(".buy_category");
@@ -18,7 +18,7 @@ const buyCategory = async () => {
       "gap-1"
     );
 
-    const category = data.buyCategory;
+    const category = data.data.buyCategory;
     category.forEach((item) => {
       const items = document.createElement('a')
       items.setAttribute('href' , '#')

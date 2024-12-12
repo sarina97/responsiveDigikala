@@ -1,10 +1,9 @@
 const highSell = async () => {
   try {
-    const response = await fetch("http://localhost:3004/data");
+    const response = await fetch("/public/dbv2.json");
     if (!response.ok) throw new Error("Failed to fetch data");
     const responseData = await response.json();
 
-    // Define containers and their respective data types
     const containers = [
       { id: "highSellSwiper", sellType: "highsell" },
       { id: "hotSellSwiper", sellType: "hotsell" },
@@ -12,7 +11,7 @@ const highSell = async () => {
 
     // Iterate through each container
     containers.forEach(({ id, sellType }) => {
-      const sellData = responseData.highSell.find((entry) => entry.type === sellType);
+      const sellData = responseData.data.highSell.find((entry) => entry.type === sellType);
 
       if (!sellData || !sellData.items) {
         console.error(`No data found for type '${sellType}'`);
@@ -25,12 +24,11 @@ const highSell = async () => {
         return;
       }
 
-      // Render Swiper Slides
       sellData.items.forEach((category) => {
         const slide = document.createElement("div");
         slide.classList.add("swiper-slide");
 
-        // Create container for 3 rows
+  
         const container = document.createElement("div");
         container.classList.add("flex", "flex-col", "gap-4");
 

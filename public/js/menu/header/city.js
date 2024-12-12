@@ -1,9 +1,11 @@
 const loadCities = async () => {
   try {
-    const response = await fetch("http://localhost:3004/data");
+    const response = await fetch("/public/dbv2.json");
     if (!response.ok) throw new Error("Failed to fetch city data");
     const data = await response.json();
-    const cities = data.city[0]?.cities || []; // Handle undefined safely
+    const cities = data.data.city[0]?.cities || [];
+    console.log('city' , cities);
+    
 
     const searchInput = document.querySelector("#city-search");
     const cityList = document.querySelector(".city-list");
