@@ -66,11 +66,11 @@ const highSell = async () => {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-        slidesPerView: 2.5,
+        slidesPerView: 1.2,
         spaceBetween: -50,
         breakpoints: {
-          640: { slidesPerView: 2.5 },
-          768: { slidesPerView: 3 },
+          640: { slidesPerView: 2 },
+          768: { slidesPerView: 2.5 },
           1024: { slidesPerView: 3.7 },
         },
       });
