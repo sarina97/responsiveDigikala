@@ -2,7 +2,7 @@
 export default {
   content: [
     "./**/*.{html,js}", // همه فایل‌های جاوااسکریپت و HTML را پوشش می‌دهد
-    "./index.html",
+    "./public/index.html",
   ],
   theme: {
     extend: {

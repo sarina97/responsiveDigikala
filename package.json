@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "tailwind": "npx tailwindcss -i ./public/tailwind.css -o ./public/css/styles.css --watch",
-    "server": "json-server --watch ./public/dbv2.json --port 3004"
+    "server": "json-server --watch ./dbv2.json --port 3004"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",

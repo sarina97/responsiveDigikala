@@ -78,7 +78,7 @@ export default async function initializeSearch() {
     }
 
     try {
-      const response = await fetch("/public/dbv2.json");
+      const response = await fetch("https://sarina97.github.io/responsiveDigikala/dbv2.json");
       const data = await response.json();
 
       if (!data.data.searchItems || !Array.isArray(data.searchItems)) {

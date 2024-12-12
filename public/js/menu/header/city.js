@@ -1,6 +1,6 @@
 const loadCities = async () => {
   try {
-    const response = await fetch("/public/dbv2.json");
+    const response = await fetch("https://sarina97.github.io/responsiveDigikala/dbv2.json");
     if (!response.ok) throw new Error("Failed to fetch city data");
     const data = await response.json();
     const cities = data.data.city[0]?.cities || [];

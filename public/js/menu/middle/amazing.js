@@ -1,6 +1,6 @@
 const amazing = async () => {
   try {
-    const response = await fetch("/public/dbv2.json");
+    const response = await fetch("https://sarina97.github.io/responsiveDigikala/dbv2.json");
     const data = await response.json(); // Await here to ensure the data is resolved parse data to usable json object 
 
     // Timer logic

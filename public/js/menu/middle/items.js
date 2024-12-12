@@ -1,6 +1,6 @@
 const items = async () => {
   try {
-    const response = await fetch("/public/dbv2.json");
+    const response = await fetch("https://sarina97.github.io/responsiveDigikala/dbv2.json");
     if (!response.ok) throw new Error("Failed to fetch data");
     const data = await response.json();
 

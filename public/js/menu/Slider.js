@@ -1,7 +1,7 @@
 const Slider = async () => {
   try {
 
-    const response = await fetch("./dbv2.json");
+    const response = await fetch("https://sarina97.github.io/responsiveDigikala/dbv2.json");
     const data = await response.json();
     
 
