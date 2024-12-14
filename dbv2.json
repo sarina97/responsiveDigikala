@@ -2,7 +2,7 @@
   "data": {
     "slider": [
       { "id": 1, "name": "slide1", "url": "./images/slider/slide6.jpg" },
-      { "id": 2, "name": "slide2", "url": "./images/slider/slide2.jpg" },
+      { "id": 2, "name": "slide2", "url": "./images/slider/slide7.gif" },
       { "id": 3, "name": "slide3", "url": "./images/slider/slide3.jpg" },
       { "id": 4, "name": "slide4", "url": "./images/slider/slide4.jpg" },
       { "id": 5, "name": "slide5", "url": "./images/slider/slide5.jpg" },
@@ -1329,6 +1329,13 @@
         "originalPrice": "390,000",
         "offer": "20%"
       }
+    ],
+    "readables":[
+      { "id": 1, "name": "young-man-practicing-upward-faci", "title":"راهنمای جامع آشنایی با اسم حرکات یوگا" , "url": "./images/readables/young-man-practicing-upward-faci.jpg" },
+      { "id": 2, "name": "game_awards_2024_winner", "title":"آسترو بات بهترین بازی سال شد؛ فهرست کامل برندگان گیم اواردز ۲۰۲۴" , "url": "./images/readables/game_awards_2024_winner.jpg" },
+      { "id": 3, "name": "pomegarante-masghati", "title":"طرز تهیه مسقطی انار خوش‌رنگ و خوش‌طعم" , "url": "./images/readables/pomegarante-masghati.jpg" },
+      { "id": 4, "name": "inofolic-1", "title":"اینوفولیک چیست و چه تاثیری در درمان تنبلی تخمدان دارد؟" , "url": "./images/readables/inofolic-1.jpg" }
     ]
+
   }
 }

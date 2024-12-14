@@ -12,6 +12,7 @@ import favBreands from "./menu/middle/favBreands.js";
 import yourTaste from "./menu/middle/yourTaste.js";
 import highSell from "./menu/middle/highSell.js";
 import offer from "./menu/middle/offer.js";
+import readables from "./menu/middle/readables.js";
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -28,4 +29,5 @@ document.addEventListener("DOMContentLoaded", () => {
   yourTaste();
   highSell();
   offer();
+  readables();
 });

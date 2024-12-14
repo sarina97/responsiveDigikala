@@ -190,9 +190,7 @@
 
               <!-- Dropdown Menu -->
               <div
-                class="dropdown-menu absolute right-[-35%] top-full mt-[12px] bg-white shadow-lg border border-gray-200 
-                opacity-0 invisible group-hover:opacity-100 group-hover:visible hover:opacity-100 hover:visible rounded-bl-lg rounded-br-lg 
-                transition-all duration-300 h-[70vh] w-[50vw] z-[200] flex"
+                class="dropdown-menu absolute right-[-35%] top-full mt-[12px] bg-white shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible hover:opacity-100 hover:visible rounded-bl-lg rounded-br-lg transition-all duration-300 h-[70vh] w-[50vw] z-[200] flex"
               >
                 <div
                   class="sidebar w-1/4 bg-gray-100 overflow-y-auto"
@@ -612,7 +610,7 @@
         class="long_poster my-4 w-[90%] md:w-[90%] xl:w-[70%] grid grid-cols-1 md:grid-cols-2 items-center justify-center mx-auto gap-3"
       >
         <img
-          src="./images/midd-poster/long1.jpg"
+          src="./images/midd-poster/gif.gif"
           alt="tasty"
           class="rounded-2xl w-full h-[200px] md:h-auto object-cover"
         />
@@ -629,7 +627,9 @@
         <div
           class="swiper-container6 relative overflow-hidden md:border-[1px] md:border-gray-300 md:rounded-2xl"
         >
-          <h2 class="text-center text-[18px] my-4 lg:my-8">محبوب ترین برند ها</h2>
+          <h2 class="text-center text-[18px] my-4 lg:my-8">
+            محبوب ترین برند ها
+          </h2>
           <div class="swiper-wrapper swiper-wrapper6"></div>
           <!-- Navigation buttons -->
           <div class="swiper-button-next swiper-button-next6"></div>
@@ -705,7 +705,7 @@
           <div class="swiper-container px-4" id="highSellSwiper">
             <div class="swiper-wrapper swiper-wrapper7"></div>
             <!-- Swiper Navigation Buttons -->
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-next "></div>
             <div class="swiper-button-prev"></div>
           </div>
         </div>
@@ -769,11 +769,11 @@
 
       <!-- hot sell start  -->
       <div
-        class="hot_sell my-4 w-[100%] md:w-[90%] xl:w-[70%] mx-auto overflow-hidden"
+        class="hot_sell my-4 w-[100%] md:w-[90%] xl:w-[70%] mx-auto overflow-hidden relative"
       >
         <div
           class="hot_sell_container p-2 md:border-[.5px] md:border-gray-300 md:rounded-2xl"
-          id="hot_sell_container "
+          id="hot_sell_container relative "
         >
           <div class="hot_sell_header flex justify-between my-4 px-2">
             <span class="hidden md:block"></span>
@@ -809,12 +809,56 @@
           <div class="swiper-container px-4" id="hotSellSwiper">
             <div class="swiper-wrapper swiper-wrapper8"></div>
             <!-- Swiper Navigation Buttons -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next swiper-button-next_hot"></div>
+            <div class="swiper-button-prev swiper-button-prev_hot"></div>
           </div>
         </div>
       </div>
       <!-- hot sell end  -->
+
+      <!-- readables start  -->
+      <div
+        class="readables my-4 w-[90%] md:w-[90%] xl:w-[70%] mx-auto overflow-hidden"
+      >
+        <div
+          class="readables_container grid grid-cols-1 lg:grid-cols-4 gap-3 items-start justify-items-center"
+        ></div>
+      </div>
+      <!-- readables end  -->
+
+      <!-- footer start  -->
+
+      <!-- footer end  -->
+
+      <!-- super market fixed start  -->
+      <!-- Supermarket Fixed Button -->
+      <div
+        id="supermarket-btn"
+        class="supermarket fixed left-1 bottom-2 rounded-full bg-green-600 text-white transition-all duration-300 flex items-center overflow-hidden"
+      >
+        <div class="icon px-4 py-2 flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+            />
+          </svg>
+          <span class="text-[12px]">سوپر مارکت</span>
+        </div>
+        <div class="text hidden whitespace-nowrap px-4 py-2 text-sm">
+          تنوع بالا و پر تخفیف
+        </div>
+      </div>
+
+      <!-- super market fixed end  -->
     </main>
     <!-- main end  -->
 

@@ -8,12 +8,12 @@
 .swiper-button-next3,
 .swiper-button-prev3 {
   position: absolute !important;
-  background-color: black !important;
+  background-color: white !important;
   z-index: 20;
+  border: 1px solid rgb(179, 179, 179)  ;
   width: 35px !important;
   height: 35px !important;
   border-radius: 9999px !important;
-  color: white;
   /* display: flex !important; */
   align-items: center !important;
   justify-content: center !important;
@@ -21,9 +21,38 @@
   bottom: 35px !important;
   transition: all 0.2s ease;
 }
+.swiper2-button-next::after,
+.swiper2-button-prev::after,
+.swiper-button-next3::after,
+.swiper-button-prev3::after{
+  content: ">";
+  color: black !important;
 
-.swiper-button-next,
-.swiper-button-prev {
+}
+.swiper-button-next_hot{
+  left: 30px !important;
+  bottom: 50% !important;
+}
+.swiper-button-prev_hot{
+  right: 30px !important;
+  bottom: 50% !important;
+}
+.swiper-button-next_hot,
+.swiper-button-prev_hot{
+  background-color: white !important;
+  width: 40px !important;
+  height: 40px !important;
+  border: 1px solid rgb(194, 194, 194) !important;
+  border-radius: 50%;
+}
+.swiper-button-next_hot::after,
+.swiper-button-prev_hot::after{
+  color: gray !important; 
+  font: bold;
+}
+
+.swiper1-button-next,
+.swiper1-button-prev {
   position: absolute !important;
   background-color: black !important;
   visibility: hidden !important;
@@ -38,8 +67,8 @@
   bottom: 35px !important;
   transition: all 0.2s ease;
 }
-.swiper-container:hover .swiper-button-next,
-.swiper-container:hover .swiper-button-prev {
+.swiper-container:hover .swiper1-button-next,
+.swiper-container:hover .swiper1-button-prev {
   visibility: visible !important ;
   opacity: 1;
 }
@@ -83,18 +112,18 @@
   .swiper-button-prev5::after {
     color: #ffffff !important;
   }
-  .swiper-button-prev {
+  .swiper1-button-prev {
     right: 20px !important;
     left: auto !important;
   }
 }
 
-.swiper-button-prev {
+.swiper1-button-prev {
   right: 30px !important;
   /* left: auto !important; */
 }
 
-.swiper-button-next {
+.swiper1-button-next {
   right: 75px !important;
   /* right: auto !important; */
 }
@@ -113,8 +142,8 @@
   right: auto !important;
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
+.swiper1-button-next::after,
+.swiper1-button-prev::after {
   color: #ffffff !important;
 }
 
