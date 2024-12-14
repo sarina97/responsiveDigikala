@@ -1329,6 +1329,12 @@
         "originalPrice": "390,000",
         "offer": "20%"
       }
+    ],
+     "readables":[
+      { "id": 1, "name": "young-man-practicing-upward-faci", "title":"راهنمای جامع آشنایی با اسم حرکات یوگا" , "url": "./images/readables/young-man-practicing-upward-faci.jpg" },
+      { "id": 2, "name": "game_awards_2024_winner", "title":"آسترو بات بهترین بازی سال شد؛ فهرست کامل برندگان گیم اواردز ۲۰۲۴" , "url": "./images/readables/game_awards_2024_winner.jpg" },
+      { "id": 3, "name": "pomegarante-masghati", "title":"طرز تهیه مسقطی انار خوش‌رنگ و خوش‌طعم" , "url": "./images/readables/pomegarante-masghati.jpg" },
+      { "id": 4, "name": "inofolic-1", "title":"اینوفولیک چیست و چه تاثیری در درمان تنبلی تخمدان دارد؟" , "url": "./images/readables/inofolic-1.jpg" }
     ]
   }
 }
