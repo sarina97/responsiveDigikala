@@ -1,6 +1,8 @@
 const highSell = async () => {
   try {
-    const response = await fetch("https://sarina97.github.io/responsiveDigikala/dbv2.json");
+    const response = await fetch(
+      "https://sarina97.github.io/responsiveDigikala/dbv2.json"
+    );
     if (!response.ok) throw new Error("Failed to fetch data");
     const responseData = await response.json();
 
@@ -10,7 +12,9 @@ const highSell = async () => {
     ];
 
     containers.forEach(({ id, sellType }) => {
-      const sellData = responseData.data.highSell.find((entry) => entry.type === sellType);
+      const sellData = responseData.data.highSell.find(
+        (entry) => entry.type === sellType
+      );
 
       if (!sellData || !sellData.items) {
         console.error(`No data found for type '${sellType}'`);
@@ -27,7 +31,6 @@ const highSell = async () => {
         const slide = document.createElement("div");
         slide.classList.add("swiper-slide");
 
-  
         const container = document.createElement("div");
         container.classList.add("flex", "flex-col", "gap-4");
 
@@ -65,11 +68,7 @@ const highSell = async () => {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-<<<<<<< HEAD
-         slidesPerView: 1.2,
-=======
         slidesPerView: 1.2,
->>>>>>> cbc677a37c4356e51482c85ca36bcb5ebc86eb93
         spaceBetween: -50,
         breakpoints: {
           640: { slidesPerView: 2 },
