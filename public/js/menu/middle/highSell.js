@@ -65,7 +65,11 @@ const highSell = async () => {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+<<<<<<< HEAD
          slidesPerView: 1.2,
+=======
+        slidesPerView: 1.2,
+>>>>>>> cbc677a37c4356e51482c85ca36bcb5ebc86eb93
         spaceBetween: -50,
         breakpoints: {
           640: { slidesPerView: 2 },
