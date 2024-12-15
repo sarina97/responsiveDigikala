@@ -81,12 +81,13 @@ export default async function initializeSearch() {
       const response = await fetch("https://sarina97.github.io/responsiveDigikala/dbv2.json");
       const data = await response.json();
 
-      if (!data.data.searchItems || !Array.isArray(data.searchItems)) {
+      if (!data.data.searchItems || !Array.isArray(data.data.searchItems)) {
         throw new Error("Invalid data format");
       }
 
       const filteredResults = [];
       data.data.searchItems.forEach((category) => {
+        console.log("matching" , category);
         const matchingItems = category.items.filter((item) =>
           item.title.includes(query)
         );
@@ -135,15 +136,15 @@ export default async function initializeSearch() {
 
   async function fetchCategories() {
     try {
-      const response = await fetch("http://localhost:3004/data");
+      const response = await fetch("https://sarina97.github.io/responsiveDigikala/dbv2.json");
       const data = await response.json();
 
-      if (!data.searchItems || !Array.isArray(data.searchItems)) {
+      if (!data.data.searchItems || !Array.isArray(data.data.searchItems)) {
         throw new Error("Invalid data format");
       }
 
       const swiperWrapper = document.querySelector(".swiper-wrapper");
-      data.searchItems.forEach((category) => {
+      data.data.searchItems.forEach((category) => {
         const categorySlide = document.createElement("div");
         categorySlide.className = "swiper-slide";
         categorySlide.innerHTML = `
