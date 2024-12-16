@@ -16,12 +16,13 @@ export default async function createDropdownMenu() {
     let selectedCategory = categories[0];
     //موبایل نشون بده
     
-
+    
     function renderSidebar() {
       sidebar.innerHTML = ""; 
       categories.forEach((category) => {
+        console.log(category.url);
         const item = document.createElement("div");
-        item.textContent = category.title;
+        item.innerHTML = `<span class="hover:text-[#ed1944] text-black">${category.title}<span>`;
         item.className =
           "p-2 cursor-pointer hover:text-[#ed1944] hover:bg-white transition-all duration-400 text-[14px] font-medium ";
         item.addEventListener("mouseenter", () => {

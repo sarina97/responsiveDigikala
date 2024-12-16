@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./**/*.{html,js}", // همه فایل‌های جاوااسکریپت و HTML را پوشش می‌دهد
+    "./**/*.{html,js}",
     "./index.html",
   ],
   theme: {
