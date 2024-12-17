@@ -13,6 +13,8 @@ import yourTaste from "./menu/middle/yourTaste.js";
 import highSell from "./menu/middle/highSell.js";
 import offer from "./menu/middle/offer.js";
 import readables from "./menu/middle/readables.js";
+import { handleSupermarketButton } from "./menu/superMarket.js";
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -30,4 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
   highSell();
   offer();
   readables();
+  handleSupermarketButton();
+
 });

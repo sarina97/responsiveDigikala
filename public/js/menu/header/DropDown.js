@@ -22,7 +22,7 @@ export default async function createDropdownMenu() {
       categories.forEach((category) => {
         console.log(category.url);
         const item = document.createElement("div");
-        item.innerHTML = `<span class="hover:text-[#ed1944] text-black">${category.title}<span>`;
+        item.innerHTML = `<span class="hover:text-[#ed1944] text-black text-[14px]">${category.title}<span>`;
         item.className =
           "p-2 cursor-pointer hover:text-[#ed1944] hover:bg-white transition-all duration-400 text-[14px] font-medium ";
         item.addEventListener("mouseenter", () => {

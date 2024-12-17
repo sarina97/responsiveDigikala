@@ -21,21 +21,13 @@
   bottom: 35px !important;
   transition: all 0.2s ease;
 }
-.swiper2-button-next::after,
-.swiper2-button-prev::after,
-.swiper-button-next3::after,
-.swiper-button-prev3::after{
-  content: ">";
-  color: black !important;
 
-}
 .swiper-button-next_hot{
-  left: 30px !important;
-  bottom: 50% !important;
+  left: 20px !important;
 }
 .swiper-button-prev_hot{
-  right: 30px !important;
-  bottom: 50% !important;
+  right: 20px !important;
+
 }
 .swiper-button-next_hot,
 .swiper-button-prev_hot{
@@ -45,9 +37,11 @@
   border: 1px solid rgb(194, 194, 194) !important;
   border-radius: 50%;
 }
+.swiper-button-next::after,
+.swiper-button-prev::after,
 .swiper-button-next_hot::after,
 .swiper-button-prev_hot::after{
-  color: gray !important; 
+  color: rgb(151, 151, 151) !important; 
   font: bold;
 }
 
@@ -60,6 +54,7 @@
   width: 40px !important;
   height: 40px !important;
   border-radius: 9999px !important;
+  bottom: 0 !important;
   /* display: flex !important; */
   align-items: center !important;
   justify-content: center !important;
@@ -79,7 +74,7 @@
   .swiper-button-prev {
     width: 25px !important;
     height: 25px !important;
-    bottom: 20px !important;
+    bottom: 10px !important;
   }
 
   .swiper-button-next::after,
@@ -98,18 +93,13 @@
 
   .swiper-button-next::after,
   .swiper-button-prev::after,
-  .swiper2-button-next::after,
-  .swiper2-button-prev::after,
   .swiper-button-next-city::after,
   .swiper-button-prev-city::after {
     font-size: 18px !important;
   }
-  .swiper2-button-next::after,
-  .swiper2-button-prev::after,
-  .swiper-button-next-city::after,
-  .swiper-button-prev-city::after,
-  .swiper-button-next5::after,
-  .swiper-button-prev5::after {
+
+  .swiper-button-next-city::after
+  .swiper-button-prev-city::after {
     color: #ffffff !important;
   }
   .swiper1-button-prev {
@@ -138,13 +128,12 @@
 .swiper2-button-next,
 .swiper-button-next3 {
   left: 10px !important;
-  bottom: 80px !important;
   right: auto !important;
 }
 
 .swiper1-button-next::after,
 .swiper1-button-prev::after {
-  color: #ffffff !important;
+  color: rgb(39, 38, 38) !important;
 }
 
 .swiper-pagination {
@@ -204,16 +193,14 @@
 
 .swiper-button-next-city,
 .swiper-button-prev-city,
-.swiper-button-next5,
-.swiper-button-prev5,
-.swiper-button-next6,
-.swiper-button-prev6 {
+.swiper-button-next,
+.swiper-button-prev{
   position: absolute !important;
-  color: black !important;
-  top: 50% !important;
+  color: rgb(102, 102, 102) !important;
+  top: 65% !important;
   width: 35px !important;
   height: 35px !important;
-  border: 1px solid gray;
+  border: 1px solid rgb(167, 167, 167);
   background-color: white !important;
   border-radius: 50% !important;
   transform: translateY(-50%) !important;
@@ -222,13 +209,32 @@
 
 .swiper-button-next-city,
 .swiper-button-next5 , 
-.swiper-button-next6 {
+.swiper-button-next6,
+.swiper-button-prev6 {
   left: 10px !important;
-  bottom: 50% !important;
+  bottom: 40% !important;
+}
+.swiper-button-next5 ,
+.swiper-button-prev5{
+  position: absolute !important;
+  color: rgb(102, 102, 102) !important;
+  top: 65% !important;
+  width: 35px !important;
+  height: 35px !important;
+  border: 1px solid rgb(167, 167, 167);
+  background-color: white !important;
+  border-radius: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 10 !important;
+
 }
 
 .swiper-button-prev-city,
 .swiper-button-prev5,
 .swiper-button-prev6 {
   right: 10px !important;
+}
+.swiper2-button-next,
+.swiper2-button-prev{
+  bottom: 90% !important;
 }
