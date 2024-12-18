@@ -912,28 +912,60 @@
       <!-- readables end  -->
       <hr class="w-full" />
       <!-- footer start  -->
-      <div
-        class="footer my-4 w-[90%] md:w-[90%] xl:w-[85%] mx-auto overflow-hidden"
-      >
-        <div class="footer_container mt-4">
+      <div class="footer my-4 w-[100%] mx-auto overflow-hidden">
+        <div
+          class="footer_container mt-4 w-[90%] md:w-[90%] xl:w-[85%] mx-auto"
+        >
           <!-- Top Footer Section -->
           <div
-            class="footer_top_first lg:flex-col lg:justify-start my-5 gap-4 hidden lg:flex"
+            class="footer_top_first lg:justify-between my-5 gap-4 hidden lg:flex items-center"
           >
-            <img
-              src="./images/header/لوگوی دیجیکالا.svg"
-              class="w-[200px]"
-              alt=""
-            />
-            <div class="footer_first_content flex gap-3">
-              <span class="text-[12px] text-gray-800"
-                >تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱ |
-              </span>
-              <span class="text-[12px] text-gray-800">۰۲۱-۹۱۰۰۰۱۰۰ |</span>
-              <span class="text-[12px] text-gray-800"
-                >۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم</span
-              >
+            <div class="flex flex-col gap-4">
+              <img
+                src="./images/header/لوگوی دیجیکالا.svg"
+                class="w-[200px]"
+                alt=""
+              />
+              <div class="footer_first_content flex gap-3">
+                <span class="text-[12px] text-gray-800"
+                  >تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱ |
+                </span>
+                <span class="text-[12px] text-gray-800">۰۲۱-۹۱۰۰۰۱۰۰ |</span>
+                <span class="text-[12px] text-gray-800"
+                  >۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم</span
+                >
+              </div>
             </div>
+            <button
+              onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+              class="flex items-center justify-between w-[10$] bg-transparent border-[2px] text-gray-400 text-[12px] px-4 py-2 rounded-lg transition"
+            >
+              بازگشت به بالا
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                style="width: 24px; height: 24px; fill: rgb(153, 153, 153)"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <symbol
+                    id="expandLess"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M7.707 14.707l-1.414-1.414 5-5a1 1 0 011.414 0l5 5-1.414 1.414L12 10.414l-4.293 4.293z"
+                    ></path>
+                  </symbol>
+                </defs>
+                <g>
+                  <path
+                    d="M7.707 14.707l-1.414-1.414 5-5a1 1 0 011.414 0l5 5-1.414 1.414L12 10.414l-4.293 4.293z"
+                  ></path>
+                </g>
+              </svg>
+            </button>
           </div>
           <div
             class="footer_top_second lg:justify-around my-5 gap-4 hidden lg:flex p-6 w-[90%]"
@@ -945,160 +977,246 @@
             <img src="./images/footer/guarantee.svg" alt="" class="w-[60px]" />
           </div>
           <div
-            class="grid grid-cols-1 lg:grid-cols-4 grid-rows-4 lg:grid-rows-1 gap-6 text-gray-700 py-8"
+            class="grid grid-cols-1 lg:grid-cols-4 grid-rows-4 lg:grid-rows-1 lg:gap-6 text-gray-700 py-8"
           >
             <!-- Section 1 -->
-            <div class="space-y-3">
-              <div class="flex items-center justify-between md:justify-start">
-                <h3 class="text-[13px] lg:text-[16px] font-bold text-gray-800 mb-2">
+            <div class="faq-item mb-4">
+              <button
+                class="w-full text-left flex justify-between items-center py-3 focus:outline-none"
+                onclick="toggleFAQ(1)"
+              >
+                <span
+                  class="font-medium flex items-center gap-2 dark:text-white"
+                >
                   با دیجی کالا
-                </h3>
-                <button
-                  class="toggle-btn md:hidden text-gray-600"
-                  aria-expanded="false"
-                  data-target="section1"
+                </span>
+                <span
+                  id="icon-1"
+                  class="transform transition-transform duration-300 dark:text-white lg:hidden"
+                  >+</span
                 >
-                  &#9662;
-                </button>
+              </button>
+              <div id="answer-1" class="pl-4 pr-2 text-gray-600 hidden lg:flex">
+                <ul class="space-y-2 text-sm">
+                  <li>
+                    <a href="#" class="hover:text-blue-600 text-gray-400"
+                      >اتاق خبر دیجی‌کالا</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-blue-600 text-gray-400"
+                      >فروش در دیجی‌کالا</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-blue-600 text-gray-400"
+                      >فرصت‌های شغلی</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-blue-600 text-gray-400"
+                      >تماس با دیجی‌کالا</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-blue-600 text-gray-400"
+                      >درباره ما</a
+                    >
+                  </li>
+                </ul>
               </div>
-              <ul
-                id="section1"
-                class="space-y-2 text-sm flex-col gap-4 md:flex hidden"
-              >
-                <li><a href="#" class="hover:text-blue-600 text-gray-400">اتاق خبر دیجی‌کالا</a></li>
-                <li><a href="#" class="hover:text-blue-600 text-gray-400">فروش در دیجی‌کالا</a></li>
-                <li><a href="#" class="hover:text-blue-600 text-gray-400">فرصت‌های شغلی</a></li>
-                <li><a href="#" class="hover:text-blue-600 text-gray-400">تماس با دیجی‌کالا</a></li>
-                <li><a href="#" class="hover:text-blue-600 text-gray-400">درباره ما</a></li>
-              </ul>
             </div>
+
             <!-- Section 2 -->
-            <div class="space-y-3">
-              <div class="flex items-center justify-between md:justify-start">
-                <h3 class="text-[13px] lg:text-[16px] font-bold text-gray-800 mb-2">
-                  خدمات مشتریان
-                </h3>
-                <button
-                  class="toggle-btn md:hidden text-gray-600"
-                  aria-expanded="false"
-                  data-target="section2"
-                >
-                  &#9662;
-                </button>
-              </div>
-              <ul
-                id="section2"
-                class="space-y-2 text-sm flex-col gap-4 md:flex hidden"
+            <div class="faq-item mb-4">
+              <button
+                class="w-full text-left flex justify-between items-center py-3 focus:outline-none"
+                onclick="toggleFAQ(2)"
               >
-                <li>
-                  <a href="#" class="hover:text-blue-600 text-gray-400"
-                    >پاسخ به پرسش‌ها</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="hover:text-blue-600 text-gray-400"
-                    >شرایط بازگشت کالا</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="hover:text-blue-600 text-gray-400"
-                    >گزارش تخلف</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="hover:text-blue-600 text-gray-400"
-                    >حریم خصوصی</a
-                  >
-                </li>
-              </ul>
+                <span
+                  class="font-medium flex items-center gap-2 dark:text-white"
+                >
+                  خدمات مشتریان
+                </span>
+                <span
+                  id="icon-2"
+                  class="transform transition-transform duration-300 dark:text-white lg:hidden"
+                  >+</span
+                >
+              </button>
+              <div id="answer-2" class="pl-4 pr-2 text-gray-600 hidden lg:flex">
+                <ul class="space-y-2 text-sm">
+                  <li>
+                    <a href="#" class="hover:text-blue-600 text-gray-400"
+                      >پاسخ به پرسش‌ها</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-blue-600 text-gray-400"
+                      >شرایط بازگشت کالا</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-blue-600 text-gray-400"
+                      >گزارش تخلف</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-blue-600 text-gray-400"
+                      >حریم خصوصی</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <!-- Section 3 -->
-            <div class="space-y-3">
-              <div class="flex items-center justify-between md:justify-start">
-                <h3 class="text-[13px] lg:text-[16px] font-bold text-gray-800 mb-2">
-                  راهنمای خرید از دیجی‌کالا
-                </h3>
-                <button
-                  class="toggle-btn md:hidden text-gray-600"
-                  aria-expanded="false"
-                  data-target="section3"
-                >
-                  &#9662;
-                </button>
-              </div>
-              <ul
-                id="section3"
-                class="space-y-2 text-sm flex-col gap-4 md:flex hidden"
+            <div class="faq-item mb-4">
+              <button
+                class="w-full text-left flex justify-between items-center py-3 focus:outline-none"
+                onclick="toggleFAQ(3)"
               >
-                <li>
-                  <a href="#" class="hover:text-blue-600 text-gray-400"
-                    >نحوه ثبت سفارش</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="hover:text-blue-600 text-gray-400"
-                    >شیوه‌های پرداخت</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="hover:text-blue-600 text-gray-400"
-                    >رویه ارسال سفارش</a
-                  >
-                </li>
-              </ul>
+                <span
+                  class="font-medium flex items-center gap-2 dark:text-white"
+                >
+                  راهنمای خرید از دیجی‌کالا
+                </span>
+                <span
+                  id="icon-3"
+                  class="transform transition-transform duration-300 dark:text-white lg:hidden"
+                  >+</span
+                >
+              </button>
+              <div id="answer-3" class="pl-4 pr-2 text-gray-600 hidden lg:flex">
+                <ul class="space-y-2 text-sm">
+                  <li>
+                    <a href="#" class="hover:text-blue-600 text-gray-400"
+                      >نحوه ثبت سفارش</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-blue-600 text-gray-400"
+                      >شیوه‌های پرداخت</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-blue-600 text-gray-400"
+                      >رویه ارسال سفارش</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
 
+            <!-- Section 4 -->
             <!-- Section 4: Social Media -->
             <div class="space-y-3 flex flex-col gap-6">
               <div class="flex items-center justify-between md:justify-start">
                 <h3 class="text-[13px] lg:text-[16px] font-bold text-blue-950">
                   همراه ما باشید!
                 </h3>
-                <button
-                  class="toggle-btn md:hidden text-gray-600"
-                  aria-expanded="false"
-                  data-target="section4"
-                >
-                  &#9662;
-                </button>
               </div>
               <div id="section4" class="hidden md:block space-y-3">
                 <div class="flex space-x-4 rtl:space-x-reverse">
                   <a href="#" class="hover:text-blue-500">
-                    <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/5/51/LinkedIn_logo.png"
-                      alt="LinkedIn"
-                      class="w-6 h-6"
-                    />
+                    <svg
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns="http://www.w3.org/2000/svg"
+                      style="width: 50px; height: 50px; fill: gray"
+                      width="20"
+                      height="20"
+                    >
+                      <defs>
+                        <symbol
+                          id="instagram"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 40 40"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.033 3H7.967A4.973 4.973 0 003 7.967v8.066A4.973 4.973 0 007.967 21h8.066A4.973 4.973 0 0021 16.033V7.967A4.973 4.973 0 0016.033 3zm3.37 13.033a3.374 3.374 0 01-3.37 3.37H7.967a3.374 3.374 0 01-3.37-3.37V7.967a3.374 3.374 0 013.37-3.37h8.066a3.374 3.374 0 013.37 3.37v8.066zM7.362 12A4.643 4.643 0 0112 7.362 4.643 4.643 0 0116.638 12 4.643 4.643 0 0112 16.638 4.643 4.643 0 017.362 12zM12 15.041a3.044 3.044 0 01-3.041-3.04A3.045 3.045 0 0112 8.958 3.045 3.045 0 0115.041 12 3.044 3.044 0 0112 15.041zm4.005-8.69c.218-.219.52-.343.828-.343.308 0 .61.124.828.343a1.176 1.176 0 010 1.656c-.218.218-.52.343-.828.343a1.18 1.18 0 01-.828-.343 1.18 1.18 0 01-.343-.828c0-.309.125-.611.343-.828z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </symbol>
+                      </defs>
+                      <g>
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.033 3H7.967A4.973 4.973 0 003 7.967v8.066A4.973 4.973 0 007.967 21h8.066A4.973 4.973 0 0021 16.033V7.967A4.973 4.973 0 0016.033 3zm3.37 13.033a3.374 3.374 0 01-3.37 3.37H7.967a3.374 3.374 0 01-3.37-3.37V7.967a3.374 3.374 0 013.37-3.37h8.066a3.374 3.374 0 013.37 3.37v8.066zM7.362 12A4.643 4.643 0 0112 7.362 4.643 4.643 0 0116.638 12 4.643 4.643 0 0112 16.638 4.643 4.643 0 017.362 12zM12 15.041a3.044 3.044 0 01-3.041-3.04A3.045 3.045 0 0112 8.958 3.045 3.045 0 0115.041 12 3.044 3.044 0 0112 15.041zm4.005-8.69c.218-.219.52-.343.828-.343.308 0 .61.124.828.343a1.176 1.176 0 010 1.656c-.218.218-.52.343-.828.343a1.18 1.18 0 01-.828-.343 1.18 1.18 0 01-.343-.828c0-.309.125-.611.343-.828z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </g>
+                    </svg>
                   </a>
                   <a href="#" class="hover:text-blue-500">
-                    <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
-                      alt="Instagram"
-                      class="w-6 h-6"
-                    />
+                    <svg
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns="http://www.w3.org/2000/svg"
+                      style="width: 40px; height: 40px; fill: gray"
+                      width="40"
+                      height="40"
+                    >
+                      <defs>
+                        <symbol
+                          id="linkedin"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 32 32"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M6.4 4h19.2C26.92 4 28 5.08 28 6.4v19.2c0 1.32-1.08 2.4-2.4 2.4H6.4C5.08 28 4 26.92 4 25.6V6.4C4 5.08 5.08 4 6.4 4zm1.2 20.4h3.6V13.6H7.6v10.8zm1.8-12.84c-1.2 0-2.16-.96-2.16-2.16 0-1.2.96-2.16 2.16-2.16 1.2 0 2.16.96 2.16 2.16 0 1.2-.96 2.16-2.16 2.16zM20.8 24.4h3.6v-6.84c0-2.28-1.92-4.2-4.2-4.2-1.08 0-2.4.72-3 1.68V13.6h-3.6v10.8h3.6v-6.36c0-.96.84-1.8 1.8-1.8.96 0 1.8.84 1.8 1.8v6.36z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </symbol>
+                      </defs>
+                      <g>
+                        <path
+                          fill-rule="evenodd"
+                          d="M6.4 4h19.2C26.92 4 28 5.08 28 6.4v19.2c0 1.32-1.08 2.4-2.4 2.4H6.4C5.08 28 4 26.92 4 25.6V6.4C4 5.08 5.08 4 6.4 4zm1.2 20.4h3.6V13.6H7.6v10.8zm1.8-12.84c-1.2 0-2.16-.96-2.16-2.16 0-1.2.96-2.16 2.16-2.16 1.2 0 2.16.96 2.16 2.16 0 1.2-.96 2.16-2.16 2.16zM20.8 24.4h3.6v-6.84c0-2.28-1.92-4.2-4.2-4.2-1.08 0-2.4.72-3 1.68V13.6h-3.6v10.8h3.6v-6.36c0-.96.84-1.8 1.8-1.8.96 0 1.8.84 1.8 1.8v6.36z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </g>
+                    </svg>
                   </a>
                   <a href="#" class="hover:text-blue-500">
-                    <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-                      alt="WhatsApp"
-                      class="w-6 h-6"
-                    />
+                    <svg
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns="http://www.w3.org/2000/svg"
+                      style="width: 40px; height: 40px; fill: gray"
+                      width="40"
+                      height="40"
+                    >
+                      <defs>
+                        <symbol
+                          id="twitter"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M21 6.73a7.374 7.374 0 01-2.12.581 3.708 3.708 0 001.623-2.041 7.444 7.444 0 01-2.346.896 3.693 3.693 0 00-6.292 3.367 10.483 10.483 0 01-7.61-3.858 3.665 3.665 0 00-.5 1.856 3.69 3.69 0 001.642 3.073 3.692 3.692 0 01-1.673-.464v.046a3.696 3.696 0 002.962 3.621c-.31.083-.636.13-.973.13-.238 0-.47-.024-.695-.07a3.695 3.695 0 003.448 2.565 7.409 7.409 0 01-4.585 1.579c-.298 0-.592-.018-.881-.051a10.437 10.437 0 005.66 1.661c6.793 0 10.506-5.626 10.506-10.505l-.013-.478A7.373 7.373 0 0021 6.73z"
+                          ></path>
+                        </symbol>
+                      </defs>
+                      <g>
+                        <path
+                          d="M21 6.73a7.374 7.374 0 01-2.12.581 3.708 3.708 0 001.623-2.041 7.444 7.444 0 01-2.346.896 3.693 3.693 0 00-6.292 3.367 10.483 10.483 0 01-7.61-3.858 3.665 3.665 0 00-.5 1.856 3.69 3.69 0 001.642 3.073 3.692 3.692 0 01-1.673-.464v.046a3.696 3.696 0 002.962 3.621c-.31.083-.636.13-.973.13-.238 0-.47-.024-.695-.07a3.695 3.695 0 003.448 2.565 7.409 7.409 0 01-4.585 1.579c-.298 0-.592-.018-.881-.051a10.437 10.437 0 005.66 1.661c6.793 0 10.506-5.626 10.506-10.505l-.013-.478A7.373 7.373 0 0021 6.73z"
+                        ></path>
+                      </g>
+                    </svg>
                   </a>
                 </div>
                 <div class="space-y-3 col-span-2 md:col-span-1">
                   <h3 class="text-[13x] font-bold text-blue-950">
                     با ثبت ایمیل با ما در ارتباط باشید
                   </h3>
-                  <div class="flex flex-row gap-2">
+                  <div class="flex flex-row gap-2 w-full">
                     <input
                       type="email"
                       placeholder="ایمیل شما"
-                      class="px-3 bg-gray-300 py-2 border rounded-md focus:outline-none"
+                      class="px-3 bg-gray-200 py-2 border rounded-md focus:outline-none w-[80%]"
                     />
                     <button
-                      class="bg-gray-400 hover:bg-gray-500 text-white px-4 py-2 rounded-md"
+                      class="bg-gray-300 hover:bg-gray-500 text-white px-4 py-2 rounded-md"
                     >
                       ثبت
                     </button>
@@ -1110,13 +1228,13 @@
 
           <!-- Bottom Download Section -->
           <div
-            class="bg-[#3c4b6d] text-white p-4 lg:justify-between lg:items-center hidden lg:flex"
+            class="bg-[#3c4b6d] rounded-xl text-white p-4 lg:justify-between lg:items-center hidden lg:flex my-4"
           >
             <div class="flex items-center space-x-4 rtl:space-x-reverse">
               <span>دریافت اپلیکیشن دیجی‌کالا</span>
             </div>
 
-            <!-- Red Button -->
+            <!-- white Button -->
 
             <div class="flex gap-4">
               <a href="#" class="rounded">
@@ -1130,12 +1248,60 @@
               </a>
               <a
                 href="#"
-                class="bg-red-600 hover:bg-red-500 text-white px-4 py-2 rounded-full flex items-center"
+                class="bg-gray-200 hover:bg-red-500 text-gray-500 px-4 py-2 rounded-md flex items-center"
               >
-                دانلود
+                . . .
                 <span class="ml-1">⬇</span>
               </a>
             </div>
+          </div>
+
+          <hr class="w-full" />
+          <div
+            class="flex flex-col md:flex-row items-start gap-4 p-4 rounded shadow"
+          >
+            
+            <!-- Right Section: Text Content -->
+            <div class="text-gray-600 leading-6 relative w-[70%]">
+              <p id="content" class="line-clamp-3 overflow-hidden text-[12px]">
+                یک خرید اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهاییک خرید اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهایی متنوع، باکیفیت و دارای قیمت مناسب را در مدت زمان ی کوتاه به دست مشتریان خود برساند و ضمانت بازگشت کالا هم داشته باشد؛ ویژگی‌هایی که فروشگاه اینترنتی دیجی‌کالا سال‌هاست بر روی آن‌ها کار کرده و توانسته از این طریق مشتریان ثابت خود را داشته باشد.
+                یکی از مهم‌ترین دغدغه‌های کاربران دیجی‌کالا یا هر فروشگاه‌ اینترنتی دیگری، این است که کالای خریداری شده چه زمانی به دستشان می‌رسد. دیجی‌کالا شیوه‌های مختلفی از ارسال را متناسب با فروشنده کالا،‌ مقصد کالا و همچنین نوع کالا در اختیار کاربران خود قرار می‌دهد. هر یک از روش های ارسال دیجی کالا شرایط و ویژگی‌های خاص خود را دارند که ممکن است گاهی برای کاربران جدید، مبهم و پیچیده به نظر برسند. برای آگاهی بیشتر مشتریان از خدمات دیجی‌کالا، این فروشگاه اینترنتی در بخشی از وب‌سایت خود راهنمای کاملی از شیوه‌‌های ارسال را به صورت ساده و به دور از پیچیدگی، قرار داده است که شامل 8 نوع ارسال کالا به روش‌های زیر است: ارسال امروز، دریافت حضوری، دریافت از گنجه، ارسال توسط فروشنده، ارسال عادی، ارسال کالاهای بزرگ، سنگین و فوق سنگین، ارسال سریع سوپرمارکتی، ارسال با پست
+                
+                کدام محصولات در دیجی‌کالا قابل سفارش هستند؟
+                
+                تقریبا می‌توان گفت محصولی وجود ندارد که دیجی‌کالا برای مشتریان خود در سراسر کشور فراهم نکرده باشد. شما می‌توانید در تمامی روزهای هفته و تمامی شبانه روز دیجی‌کالا که محصولات دارای تخفیف عالی می‌شوند، سفارش خود را به سادگی ثبت کرده و در روز و محدوده زمانی مناسب خود، درب منزل تحویل بگیرید. بعضی از گروه‌های اصلی و زیر مجموعه‌های پرطرفدار محصولات دیجی‌کالا شامل مواردی می‌شود که در ادامه به معرفی آن‌ها می‌پردازیم که امکان ارسال امروز برای آن ها وجود دارد. 
+                
+                دیجی کالا در جشنواره‌های سالیانه خود به طور معمول روی تمام دسته بندی‌های کالایی تخفیف‌های عالی قرار‌می‌دهد. به عنوان مثال در زمان بلک فرایدی یا حراج جمعه سیاه، در این سال‌ها بیشترین درصد تخفیف در اختیار مشتریان دیجی‌کالا قرار گرفته‌است و شامل دسته بندی های مختلف از موبایل و لپ تاپ تا عطر و لباس و حتی غذای حیوانات خانگی بوده‌است. 
+                
+                کالای دیجیتال
+              </p>
+              <!-- Show More / Show Less Button -->
+              <button
+                id="toggleBtn"
+                class="text-blue-500 hover:text-blue-700 mt-2"
+              >
+                مشاهده بیشتر
+              </button>
+            </div>
+            <!-- Left Section: Images -->
+            <div class="flex gap-4">
+              <img
+                src="./images/footer/kasbokar.jpg"
+                alt="Image 1"
+                class="rounded object-cover w-[80px] h-[80px]"
+              />
+              <img
+                src="./images/footer/rezi.jpg"
+                alt="Image 2"
+                class="rounded object-cover w-[80px] h-[80px]"
+              />
+              <img
+                src="https://via.placeholder.com/100"
+                alt="Image 3"
+                class="rounded object-cover w-[80px] h-[80px]"
+              />
+            </div>
+
           </div>
         </div>
       </div>
@@ -1178,6 +1344,8 @@
 
     <script src="./swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="module" src="./public/js/menu/footer/showList.js"></script>
+
     <script src="./public/js/main.js" type="module"></script>
   </body>
 </html>

@@ -1,23 +1,22 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const toggleButtons = document.querySelectorAll(".toggle-btn");
+function toggleFAQ(id) {
+  // Select all FAQ items
+  const faqItems = document.querySelectorAll(".faq-item");
 
-  toggleButtons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const targetId = btn.getAttribute("data-target");
-      const targetSection = document.getElementById(targetId);
+  faqItems.forEach((item, index) => {
+    const icon = item.querySelector(`#icon-${index + 1}`);
+    const answer = item.querySelector(`#answer-${index + 1}`);
 
-      if (targetSection) {
-        // Toggle visibility of the <ul> inside the section
-        const targetList = targetSection.querySelector("ul");
-        targetList.classList.toggle("hidden");
-
-        // Update the aria-expanded attribute
-        const isExpanded = btn.getAttribute("aria-expanded") === "true";
-        btn.setAttribute("aria-expanded", String(!isExpanded));
-
-        // Update the button's icon (toggle between up/down arrows)
-        btn.innerHTML = isExpanded ? "&#9662;" : "&#9652;";
-      }
-    });
+    if (index + 1 === id) {
+      // Toggle the current FAQ section
+      const isHidden = answer.classList.contains("hidden");
+      answer.classList.toggle("hidden", !isHidden);
+      icon.textContent = isHidden ? "-" : "+";
+    } else {
+      // Ensure all other sections are closed
+      answer.classList.add("hidden");
+      icon.textContent = "+";
+    }
   });
-});
+}
+
+window.toggleFAQ = toggleFAQ; 

@@ -14,7 +14,7 @@ import highSell from "./menu/middle/highSell.js";
 import offer from "./menu/middle/offer.js";
 import readables from "./menu/middle/readables.js";
 import { handleSupermarketButton } from "./menu/superMarket.js";
-
+// import toggleFAQ from "./menu/footer/showList.js";
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -33,5 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
   offer();
   readables();
   handleSupermarketButton();
+  
 
 });
