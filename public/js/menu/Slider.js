@@ -28,11 +28,11 @@ const renderSlider = (sliderData) => {
 
   sliderData.forEach((item) => {    
     const slide = document.createElement("div");
-    slide.classList.add("swiper-slide");
+    slide.classList.add("swiper-slide" ,"px-3" , "md:p-0");
     slide.innerHTML = `
       <a href="${item.link}" target="_blank">
         <img
-          class="block object-cover overflow-hidden h-40 md:h-fit md:w-full"
+          class="block object-cover overflow-hidden rounded-2xl md:rounded-none h-40 md:h-fit md:w-full"
           src="${item.url}"
           alt="${item.name}"
         />
