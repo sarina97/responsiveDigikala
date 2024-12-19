@@ -912,10 +912,40 @@
       <!-- readables end  -->
       <hr class="w-full" />
       <!-- footer start  -->
-      <div class="footer my-4 w-[100%] mx-auto overflow-hidden">
+      <div class="footer my-4 w-[100%] mx-auto overflow-hidden relative">
         <div
           class="footer_container mt-4 w-[90%] md:w-[90%] xl:w-[85%] mx-auto"
         >
+          <button
+            onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+            class="flex items-center justify-between w-[10$] bg-transparent lg:border-[2px] text-[#19bfd3] lg:text-gray-400 text-[12px] px-4 py-2 rounded-lg transition absolute left-[50%] lg:left-[10%] top-1 lg:top-4"
+          >
+            بازگشت به بالا
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px; fill: rgb(153, 153, 153)"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <symbol
+                  id="expandLess"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7.707 14.707l-1.414-1.414 5-5a1 1 0 011.414 0l5 5-1.414 1.414L12 10.414l-4.293 4.293z"
+                  ></path>
+                </symbol>
+              </defs>
+              <g>
+                <path
+                  d="M7.707 14.707l-1.414-1.414 5-5a1 1 0 011.414 0l5 5-1.414 1.414L12 10.414l-4.293 4.293z"
+                ></path>
+              </g>
+            </svg>
+          </button>
           <!-- Top Footer Section -->
           <div
             class="footer_top_first lg:justify-between my-5 gap-4 hidden lg:flex items-center"
@@ -936,36 +966,6 @@
                 >
               </div>
             </div>
-            <button
-              onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
-              class="flex items-center justify-between w-[10$] bg-transparent border-[2px] text-gray-400 text-[12px] px-4 py-2 rounded-lg transition"
-            >
-              بازگشت به بالا
-              <svg
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xmlns="http://www.w3.org/2000/svg"
-                style="width: 24px; height: 24px; fill: rgb(153, 153, 153)"
-                width="24"
-                height="24"
-              >
-                <defs>
-                  <symbol
-                    id="expandLess"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M7.707 14.707l-1.414-1.414 5-5a1 1 0 011.414 0l5 5-1.414 1.414L12 10.414l-4.293 4.293z"
-                    ></path>
-                  </symbol>
-                </defs>
-                <g>
-                  <path
-                    d="M7.707 14.707l-1.414-1.414 5-5a1 1 0 011.414 0l5 5-1.414 1.414L12 10.414l-4.293 4.293z"
-                  ></path>
-                </g>
-              </svg>
-            </button>
           </div>
           <div
             class="footer_top_second lg:justify-around my-5 gap-4 hidden lg:flex p-6 w-[90%]"
@@ -980,24 +980,23 @@
             class="grid grid-cols-1 lg:grid-cols-4 grid-rows-4 lg:grid-rows-1 lg:gap-6 text-gray-700 py-8"
           >
             <!-- Section 1 -->
-            <div class="faq-item mb-4">
+            <div class="faq-item lg:mb-4">
               <button
                 class="w-full text-left flex justify-between items-center py-3 focus:outline-none"
-                onclick="toggleFAQ(1)"
+                onclick="ToggleFAQ(1)"
               >
-                <span
-                  class="font-medium flex items-center gap-2 dark:text-white"
-                >
+                <span class="font-medium flex items-center gap-2 text-black">
                   با دیجی کالا
                 </span>
                 <span
                   id="icon-1"
-                  class="transform transition-transform duration-300 dark:text-white lg:hidden"
+                  class="transform transition-transform duration-300 text-black lg:hidden"
                   >+</span
                 >
               </button>
+              <hr class="w-full lg:hidden" />
               <div id="answer-1" class="pl-4 pr-2 text-gray-600 hidden lg:flex">
-                <ul class="space-y-2 text-sm">
+                <ul class="space-y-2 text-sm  ">
                   <li>
                     <a href="#" class="hover:text-blue-600 text-gray-400"
                       >اتاق خبر دیجی‌کالا</a
@@ -1028,22 +1027,21 @@
             </div>
 
             <!-- Section 2 -->
-            <div class="faq-item mb-4">
+            <div class="faq-item lg:mb-4">
               <button
                 class="w-full text-left flex justify-between items-center py-3 focus:outline-none"
-                onclick="toggleFAQ(2)"
+                onclick="ToggleFAQ(2)"
               >
-                <span
-                  class="font-medium flex items-center gap-2 dark:text-white"
-                >
+                <span class="font-medium flex items-center gap-2 text-black">
                   خدمات مشتریان
                 </span>
                 <span
                   id="icon-2"
-                  class="transform transition-transform duration-300 dark:text-white lg:hidden"
+                  class="transform transition-transform duration-300 text-black lg:hidden"
                   >+</span
                 >
               </button>
+              <hr class="w-full lg:hidden" />
               <div id="answer-2" class="pl-4 pr-2 text-gray-600 hidden lg:flex">
                 <ul class="space-y-2 text-sm">
                   <li>
@@ -1071,22 +1069,21 @@
             </div>
 
             <!-- Section 3 -->
-            <div class="faq-item mb-4">
+            <div class="faq-item lg:mb-4">
               <button
                 class="w-full text-left flex justify-between items-center py-3 focus:outline-none"
-                onclick="toggleFAQ(3)"
+                onclick="ToggleFAQ(3)"
               >
-                <span
-                  class="font-medium flex items-center gap-2 dark:text-white"
-                >
+                <span class="font-medium flex items-center gap-2 text-black">
                   راهنمای خرید از دیجی‌کالا
                 </span>
                 <span
                   id="icon-3"
-                  class="transform transition-transform duration-300 dark:text-white lg:hidden"
+                  class="transform transition-transform duration-300 text-black lg:hidden"
                   >+</span
                 >
               </button>
+
               <div id="answer-3" class="pl-4 pr-2 text-gray-600 hidden lg:flex">
                 <ul class="space-y-2 text-sm">
                   <li>
@@ -1258,27 +1255,48 @@
 
           <hr class="w-full" />
           <div
-            class="flex flex-col md:flex-row items-start gap-4 p-4 rounded shadow"
+            class="flex-col md:flex-row items-start gap-4 p-4 rounded shadow hidden lg:flex"
           >
-            
             <!-- Right Section: Text Content -->
             <div class="text-gray-600 leading-6 relative w-[70%]">
               <p id="content" class="line-clamp-3 overflow-hidden text-[12px]">
-                یک خرید اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهاییک خرید اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهایی متنوع، باکیفیت و دارای قیمت مناسب را در مدت زمان ی کوتاه به دست مشتریان خود برساند و ضمانت بازگشت کالا هم داشته باشد؛ ویژگی‌هایی که فروشگاه اینترنتی دیجی‌کالا سال‌هاست بر روی آن‌ها کار کرده و توانسته از این طریق مشتریان ثابت خود را داشته باشد.
-                یکی از مهم‌ترین دغدغه‌های کاربران دیجی‌کالا یا هر فروشگاه‌ اینترنتی دیگری، این است که کالای خریداری شده چه زمانی به دستشان می‌رسد. دیجی‌کالا شیوه‌های مختلفی از ارسال را متناسب با فروشنده کالا،‌ مقصد کالا و همچنین نوع کالا در اختیار کاربران خود قرار می‌دهد. هر یک از روش های ارسال دیجی کالا شرایط و ویژگی‌های خاص خود را دارند که ممکن است گاهی برای کاربران جدید، مبهم و پیچیده به نظر برسند. برای آگاهی بیشتر مشتریان از خدمات دیجی‌کالا، این فروشگاه اینترنتی در بخشی از وب‌سایت خود راهنمای کاملی از شیوه‌‌های ارسال را به صورت ساده و به دور از پیچیدگی، قرار داده است که شامل 8 نوع ارسال کالا به روش‌های زیر است: ارسال امروز، دریافت حضوری، دریافت از گنجه، ارسال توسط فروشنده، ارسال عادی، ارسال کالاهای بزرگ، سنگین و فوق سنگین، ارسال سریع سوپرمارکتی، ارسال با پست
-                
-                کدام محصولات در دیجی‌کالا قابل سفارش هستند؟
-                
-                تقریبا می‌توان گفت محصولی وجود ندارد که دیجی‌کالا برای مشتریان خود در سراسر کشور فراهم نکرده باشد. شما می‌توانید در تمامی روزهای هفته و تمامی شبانه روز دیجی‌کالا که محصولات دارای تخفیف عالی می‌شوند، سفارش خود را به سادگی ثبت کرده و در روز و محدوده زمانی مناسب خود، درب منزل تحویل بگیرید. بعضی از گروه‌های اصلی و زیر مجموعه‌های پرطرفدار محصولات دیجی‌کالا شامل مواردی می‌شود که در ادامه به معرفی آن‌ها می‌پردازیم که امکان ارسال امروز برای آن ها وجود دارد. 
-                
-                دیجی کالا در جشنواره‌های سالیانه خود به طور معمول روی تمام دسته بندی‌های کالایی تخفیف‌های عالی قرار‌می‌دهد. به عنوان مثال در زمان بلک فرایدی یا حراج جمعه سیاه، در این سال‌ها بیشترین درصد تخفیف در اختیار مشتریان دیجی‌کالا قرار گرفته‌است و شامل دسته بندی های مختلف از موبایل و لپ تاپ تا عطر و لباس و حتی غذای حیوانات خانگی بوده‌است. 
-                
-                کالای دیجیتال
+                یک خرید اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهاییک
+                خرید اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهایی
+                متنوع، باکیفیت و دارای قیمت مناسب را در مدت زمان ی کوتاه به دست
+                مشتریان خود برساند و ضمانت بازگشت کالا هم داشته باشد؛ ویژگی‌هایی
+                که فروشگاه اینترنتی دیجی‌کالا سال‌هاست بر روی آن‌ها کار کرده و
+                توانسته از این طریق مشتریان ثابت خود را داشته باشد. یکی از
+                مهم‌ترین دغدغه‌های کاربران دیجی‌کالا یا هر فروشگاه‌ اینترنتی
+                دیگری، این است که کالای خریداری شده چه زمانی به دستشان می‌رسد.
+                دیجی‌کالا شیوه‌های مختلفی از ارسال را متناسب با فروشنده کالا،‌
+                مقصد کالا و همچنین نوع کالا در اختیار کاربران خود قرار می‌دهد.
+                هر یک از روش های ارسال دیجی کالا شرایط و ویژگی‌های خاص خود را
+                دارند که ممکن است گاهی برای کاربران جدید، مبهم و پیچیده به نظر
+                برسند. برای آگاهی بیشتر مشتریان از خدمات دیجی‌کالا، این فروشگاه
+                اینترنتی در بخشی از وب‌سایت خود راهنمای کاملی از شیوه‌‌های ارسال
+                را به صورت ساده و به دور از پیچیدگی، قرار داده است که شامل 8 نوع
+                ارسال کالا به روش‌های زیر است: ارسال امروز، دریافت حضوری، دریافت
+                از گنجه، ارسال توسط فروشنده، ارسال عادی، ارسال کالاهای بزرگ،
+                سنگین و فوق سنگین، ارسال سریع سوپرمارکتی، ارسال با پست کدام
+                محصولات در دیجی‌کالا قابل سفارش هستند؟ تقریبا می‌توان گفت محصولی
+                وجود ندارد که دیجی‌کالا برای مشتریان خود در سراسر کشور فراهم
+                نکرده باشد. شما می‌توانید در تمامی روزهای هفته و تمامی شبانه روز
+                دیجی‌کالا که محصولات دارای تخفیف عالی می‌شوند، سفارش خود را به
+                سادگی ثبت کرده و در روز و محدوده زمانی مناسب خود، درب منزل تحویل
+                بگیرید. بعضی از گروه‌های اصلی و زیر مجموعه‌های پرطرفدار محصولات
+                دیجی‌کالا شامل مواردی می‌شود که در ادامه به معرفی آن‌ها
+                می‌پردازیم که امکان ارسال امروز برای آن ها وجود دارد. دیجی کالا
+                در جشنواره‌های سالیانه خود به طور معمول روی تمام دسته بندی‌های
+                کالایی تخفیف‌های عالی قرار‌می‌دهد. به عنوان مثال در زمان بلک
+                فرایدی یا حراج جمعه سیاه، در این سال‌ها بیشترین درصد تخفیف در
+                اختیار مشتریان دیجی‌کالا قرار گرفته‌است و شامل دسته بندی های
+                مختلف از موبایل و لپ تاپ تا عطر و لباس و حتی غذای حیوانات خانگی
+                بوده‌است. کالای دیجیتال
               </p>
               <!-- Show More / Show Less Button -->
               <button
                 id="toggleBtn"
-                class="text-blue-500 hover:text-blue-700 mt-2"
+                class="text-blue-500 text-[10px] hover:text-blue-700 mt-2 shadow-bottom-only w-full text-right"
               >
                 مشاهده بیشتر
               </button>
@@ -1296,13 +1314,19 @@
                 class="rounded object-cover w-[80px] h-[80px]"
               />
               <img
-                src="https://via.placeholder.com/100"
+                src="./images/footer/kasbokar.jpg"
                 alt="Image 3"
                 class="rounded object-cover w-[80px] h-[80px]"
               />
             </div>
-
           </div>
+
+          <hr class="w-full" />
+          <p class="text-[12px] hidden lg:block text-center font-bold py-6">
+            برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و ذکر «منبع»
+            کافیست. تمام حقوق اين وب‌سايت نیز برای شرکت نوآوران فن آوازه
+            (فروشگاه آنلاین دیجی‌کالا) است.
+          </p>
         </div>
       </div>
 
@@ -1344,8 +1368,7 @@
 
     <script src="./swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script type="module" src="./public/js/menu/footer/showList.js"></script>
-
     <script src="./public/js/main.js" type="module"></script>
+    <script src="./public/js/menu/footer/ShowMore.js"></script>
   </body>
 </html>

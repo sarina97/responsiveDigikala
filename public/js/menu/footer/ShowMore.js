@@ -1,48 +1,19 @@
-function setupExpandableContent(contentId, buttonId, collapsedClass = "line-clamp-3") {
-    const content = document.getElementById(contentId);
-    const toggleBtn = document.getElementById(buttonId);
-    let isExpanded = false;
-  
-    if (!content || !toggleBtn) {
-      console.error("Invalid IDs provided for content or button.");
-      return;
-    }
-  
-    toggleBtn.addEventListener("click", () => {
-      if (isExpanded) {
-        content.classList.add(collapsedClass);
-        toggleBtn.textContent = "مشاهده بیشتر";
-      } else {
-        content.classList.remove(collapsedClass);
-        toggleBtn.textContent = "بستن";
-      }
-      isExpanded = !isExpanded;
-    });
+document.addEventListener("DOMContentLoaded", () => {
+  const content = document.querySelector("#content");
+  const toggleBtn = document.querySelector("#toggleBtn");
+
+  if (!content || !toggleBtn) {
+    console.error("Element with the provided ID was not found.");
+    return;
   }
-  
-  // Call the function for specific IDs
-  setupExpandableContent("content", "toggleBtn");
-  function setupExpandableContent(contentId, buttonId, collapsedClass = "line-clamp-3") {
-    const content = document.getElementById(contentId);
-    const toggleBtn = document.getElementById(buttonId);
-    let isExpanded = false;
-  
-    if (!content || !toggleBtn) {
-      console.error("Invalid IDs provided for content or button.");
-      return;
+
+  toggleBtn.addEventListener("click", () => {
+    if (content.classList.contains("line-clamp-3")) {
+      content.classList.replace("line-clamp-3", "line-clamp-10"); // Expand to 10 lines
+      toggleBtn.textContent = "بستن"; // Update button text
+    } else {
+      content.classList.replace("line-clamp-10", "line-clamp-3"); // Collapse to 3 lines
+      toggleBtn.textContent = "مشاهده بیشتر"; 
     }
-  
-    toggleBtn.addEventListener("click", () => {
-      if (isExpanded) {
-        content.classList.add(collapsedClass);
-        toggleBtn.textContent = "مشاهده بیشتر";
-      } else {
-        content.classList.remove(collapsedClass);
-        toggleBtn.textContent = "بستن";
-      }
-      isExpanded = !isExpanded;
-    });
-  }
-  
-  // Call the function for specific IDs
-  setupExpandableContent("content", "toggleBtn");
+  });
+});

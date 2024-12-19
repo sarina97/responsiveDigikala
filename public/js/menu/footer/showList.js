@@ -1,4 +1,4 @@
-function toggleFAQ(id) {
+function ToggleFAQ(id) {
   // Select all FAQ items
   const faqItems = document.querySelectorAll(".faq-item");
 
@@ -19,4 +19,5 @@ function toggleFAQ(id) {
   });
 }
 
-window.toggleFAQ = toggleFAQ; 
+window.ToggleFAQ = ToggleFAQ
+export default ToggleFAQ;

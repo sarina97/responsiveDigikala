@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./**/*.{html,js}",
-    "./index.html",
-  ],
+  content: ["./**/*.{html,js}", "./index.html"],
   theme: {
     extend: {
       spacing: {
@@ -13,7 +10,10 @@ export default {
         myfont: ["MyFont", "sans-serif"], // Fallback to 'sans-serif' if custom font isn't available
       },
       colors: {
-        "custom-red": "rgb(223, 49, 78)"
+        "custom-red": "rgb(223, 49, 78)",
+      },
+      boxShadow: {
+        "bottom-only": "0 -20px 4px rgba(255,255, 255, 0.8)", // Adjust values as needed
       },
     },
   },
